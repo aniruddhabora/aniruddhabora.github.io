@@ -33,29 +33,29 @@
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Louisiana Tech University",
+      "area": "Ph.D in Computational Analysis and Modeling",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "startDate": "2016",
+      "endDate": "2021",
+      "gpa": 3.97,
+      "courses": []
+    },
+    {
+      "institution": "South Asian University",
+      "area": "M.S. in Applied Mathematics",
+      "studyType": "",
+      "startDate": "2013",
+      "endDate": "2015",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Cotton College",
+      "area": "B.S. in Mathematics",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "startDate": "2010",
+      "endDate": "2013",
       "gpa": null,
       "courses": []
     }
