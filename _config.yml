@@ -22,7 +22,7 @@ repository               : "aniruddhabora/aniruddhabora.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : /aniruddhabora.github.io/profile.png #"profile.png"
+  avatar           : /profile.png #"profile.png"
   name             : "Aniruddha Bora"
   pronouns         : # example: "she/her"  
   bio              : ""
