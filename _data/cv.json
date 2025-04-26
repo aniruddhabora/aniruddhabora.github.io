@@ -1,9 +1,9 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Aniruddha Bora",
+    "email": "aniruddhabora@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
+    "website": "https://aniruddhabora.github.io",
     "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
@@ -16,17 +16,17 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=4OMm56YAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0001-8015-9924"
       },
       {
         "network": "GitHub",
         "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "url": "https://github.com/aniruddhabora"
       }
     ]
   },
