@@ -2,7 +2,7 @@
 title: "Gradient preserved method for solving heat conduction equation with variable coefficients in double layers"
 collection: publications
 category: manuscripts
-permalink: https://doi.org/10.1016/j.amc.2020.125516
+permalink: /publication/2010-10-01-paper-title-number-1
 date: 2020
 venue: 'Applied Mathematics and Computation'
 paperurl: 'https://doi.org/10.1016/j.amc.2020.125516'
