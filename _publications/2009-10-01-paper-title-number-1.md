@@ -3,7 +3,7 @@ title: "Gradient preserved method for solving heat conduction equation with vari
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-1
-date: 2020
+date: 2020-10-01
 venue: 'Applied Mathematics and Computation'
 paperurl: 'https://doi.org/10.1016/j.amc.2020.125516'
 citation: 'Aniruddha Bora, Weizhong Dai. (2020). &quot;Gradient preserved method for solving heat conduction equation with variable coefficients in double layers.&quot; <i>Applied Mathematics and Computation</i>. 386, 125516.'
