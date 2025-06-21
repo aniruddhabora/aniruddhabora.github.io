@@ -6,26 +6,37 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I’m **Aniruddha Bora**, an incoming **Assistant Professor** in the [Department of Computer Science at Texas State University](https://cs.txst.edu/) beginning **Fall 2025**. I am a problem solver and analyzer, experienced in the field of applied mathematics and computational science and modelling. I feel these are the primary key to solve any problem in nature. 
+I’m **Aniruddha Bora**, an incoming **Assistant Professor** in the [Department of Computer Science at Texas State University](https://cs.txst.edu/), starting **Fall 2025**.
 
-My research is at the intersection of **scientific machine learning**, **numerical analysis**, and **physics-informed modeling**, with a strong emphasis on solving real-world problems in **climate science**, **multiphysics systems**, **fluid mechanics**, and **micro/nanoscale heat transfer**.
-
----
-
-### 🧠 Research Focus
-
-- Physics-Informed Machine Learning (PINNs, DeepONets, Neural Operators)
-- Multi-Fidelity Modeling and Surrogate Learning
-- Turbulent Flow Prediction and Spectral Recovery
-- Scientific Computing on HPC Systems (Argonne Theta, OSCAR)
-- Inverse Design in Materials and Heat Transfer
+My research lies at the intersection of **computer science**, **applied mathematics**, and **scientific computing**, with a focus on developing robust and interpretable machine learning algorithms for solving complex real-world problems. I specialize in **physics-informed machine learning**, **operator learning**, and **hybrid modeling techniques** that combine domain knowledge with modern AI.
 
 ---
 
-### 📣 Now Recruiting
+### 🧠 Research Interests
 
-I have **two fully funded Ph.D. positions** available starting **Fall 2025** at Texas State.  
-If you're interested in **scientific ML**, **numerical PDEs**, or **physics-informed AI**, feel free to reach out at [aniruddhabora@gmail.com](mailto:aniruddhabora@gmail.com)!
+- Physics-Informed and Scientific Machine Learning 
+- Generative AI for Scientific Modeling
+- Interpretable Scientific Machine Learning
+- Surrogate Modeling for Multiphysics Systems 
+- Multi-Fidelity and Data-Efficient Learning
+- Numerical Methods + AI for Scientific Discovery
+- Symbolic Regression and Grey box modelling
+
+---
+
+### 📣 Recruiting Ph.D. Students (Fall 2025)
+
+I am currently **recruiting two fully funded Ph.D. students** to join my research group in Fall 2025 at Texas State.  
+If you're interested in working on:
+
+- **Machine learning for physical systems**
+- **Scientific and interpretable AI**
+- **Computational modelling using AI**
+
+...feel free to reach out at [aniruddhabora@gmail.com](mailto:aniruddhabora@gmail.com) with your CV and research interests.
+
+Students with backgrounds in **computer science, applied mathematics, or physics/engineering with ML experience** are especially encouraged to apply.
+
 
 ---
 
