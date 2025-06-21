@@ -20,6 +20,7 @@ My research lies at the intersection of **computer science**, **applied mathemat
 - Surrogate Modeling for Multiphysics Systems 
 - Multi-Fidelity and Data-Efficient Learning
 - Numerical Methods + AI for Scientific Discovery
+- Inverse Design for Metamaterials
 - Symbolic Regression and Grey box modelling
 
 ---
