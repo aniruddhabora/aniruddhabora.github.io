@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant- Deep Learning for Scientists $\&$ Engineers"
+title: "Teaching Assistant- Deep Learning for Scientists & Engineers"
 collection: teaching
 type: "NVIDIA Course"
 permalink: https://www.nvidia.com/en-us/on-demand/deep-learning-for-science-and-engineering
