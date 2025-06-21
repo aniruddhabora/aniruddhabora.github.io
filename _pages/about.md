@@ -12,7 +12,7 @@ My research lies at the intersection of **computer science**, **applied mathemat
 
 ---
 
-### 🧠 Research Interests
+### Research Interests
 
 - Physics-Informed and Scientific Machine Learning 
 - Generative AI for Scientific Modeling
@@ -25,7 +25,7 @@ My research lies at the intersection of **computer science**, **applied mathemat
 
 ---
 
-### 📣 Recruiting Ph.D. Students (Fall 2025)
+### Recruiting Ph.D. Students (Fall 2025)
 
 I am currently **recruiting two fully funded Ph.D. students** to join my research group in Fall 2025 at Texas State.  
 If you're interested in working on:
@@ -41,7 +41,7 @@ Students with backgrounds in **computer science, applied mathematics, or physics
 
 ---
 
-### 📍 Current Role
+### Current Role
 
 I am currently a **Postdoctoral Research Associate** in the Department of Applied Mathematics at **Brown University**, where I collaborate on interdisciplinary research involving physics-informed AI for climate and materials science.
 
