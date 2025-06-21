@@ -1,13 +1,10 @@
 ---
-title: "Paper Title Number 4"
+title: "Neural network method for solving nonlocal two-temperature nanoscale heat conduction in gold films exposed to ultrashort-pulsed lasers"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: https://doi.org/10.1016/j.ijheatmasstransfer.2022.122791
+date: 2022-03-19
+venue: 'International Journal of Heat and Mass Transfer'
+paperurl: 'https://global-sci.com/article/79490/a-new-artificial-neural-network-method-for-solving-schroumldinger-equations-on-unbounded-domains'
+citation: 'Aniruddha Bora, Weizhong Dai, Joshua P Wilson, Jacob C Boyt, Sergey L Sobolev. (2022). &quot;Neural network method for solving nonlocal two-temperature nanoscale heat conduction in gold films exposed to ultrashort-pulsed lasers.&quot; <i>International Journal of Heat and Mass Transfer</i>. Volume 190, July 2022, 122791'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
