@@ -48,9 +48,20 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Additional Certificates*
+Additional Certificate
 ======
 **ATPESC 2022**, Argonne Training Program on Extreme-Scale Computing, 2022.
+
+Honors and Awards
+======
+- **Harry J. Gaston, Jr. Memorial Scholarship in Engineering**, Sept 2020 – April 2021  
+- **College of Engineering and Science Scholarship**, Louisiana Tech University, Sep 2019 – Aug 2020  
+- **TA of the Year**, Louisiana Tech University, 2018–2019  
+- **College of Engineering and Science Scholarship**, Louisiana Tech University, Nov 2018 – Jul 2019  
+- **Mercedes-Benz Endowed Scholarship**, Louisiana Tech University, 2017–2018  
+- **Highest Cumulative Grade Point Average**, South Asian University, 2013–2014  
+- **3rd Position**, 2nd South Asian Karate Championship, Bangalore, 2010
+
 
 Service and leadership
 ======
