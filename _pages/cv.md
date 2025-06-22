@@ -50,4 +50,10 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+## *Journal Reviewer*
+
+- *Journal of Computational Physics* (Elsevier)  
+- *Engineering Applications of Artificial Intelligence* (Elsevier)  
+- *Neural Computation*  
+- *International Journal of Applied Mechanics and Engineering*  
+- *Neurocomputing*
