@@ -25,9 +25,9 @@ My research lies at the intersection of **computer science**, **applied mathemat
 
 ---
 
-### Recruiting Ph.D. Students (Fall 2025)
+### Recruiting Ph.D. Students (Fall 2026)
 
-I am currently **recruiting two fully funded Ph.D. students** to join my research group in Fall 2025 at Texas State.  
+I am currently **recruiting two fully funded Ph.D. students** to join my research group in Fall 2026 at Texas State.  
 If you're interested in working on:
 
 - **Machine learning for physical systems**
