@@ -34,7 +34,7 @@ If you're interested in working on:
 - **Scientific and interpretable AI**
 - **Computational modelling using AI**
 
-...feel free to reach out at [aniruddhabora@gmail.com](mailto:aniruddhabora@gmail.com) with your CV and research interests.
+...feel free to reach out at [aniruddhabora@gmail.com](mailto:aniruddhabora@gmail.com)  / [aniruddha_bora@txstate.edu](mailto:aniruddha_bora@txstate.edu) with your CV and research interests.
 
 Students with backgrounds in **computer science, applied mathematics, physics and engineering** are especially encouraged to apply.
 
