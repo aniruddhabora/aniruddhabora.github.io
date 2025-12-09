@@ -5,5 +5,5 @@ category: manuscripts
 permalink: https://doi.org/10.48550/arXiv.2512.03309
 date: 2025-12-02
 venue: 'Arxiv'
-paperurl: 'https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adma.202420063'
+paperurl: 'https://doi.org/10.48550/arXiv.2512.03309'
 ---
