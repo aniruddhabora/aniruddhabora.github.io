@@ -16,7 +16,10 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
-    
+
+  - title: "SPARK Lab"
+    url: /spark/
+  
   - title: "Portfolio"
     url: /portfolio/
         
