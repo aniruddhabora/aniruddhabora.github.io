@@ -12,7 +12,7 @@ I’m **Aniruddha Bora**, an **Assistant Professor** in the [Department of Compu
 My research lies at the intersection of **computer science**, **applied mathematics**, and **scientific computing**, with a focus on developing robust and interpretable machine learning algorithms for solving complex real-world problems. I specialize in **physics-informed machine learning**, **operator learning**, and **hybrid modeling techniques** that combine domain knowledge with modern AI.
 
 
-I lead the **[SPARKS Group](/spark/)** (**S**cientific **P**rediction through **A**I **R**esearch & **K**nowledge **S**ystems), where we develop robust and interpretable machine learning algorithms for solving complex scientific problems. My research lies at the intersection of **computer science**, **applied mathematics**, and **scientific computing**, with a focus on **physics-informed machine learning**, **operator learning**, and **hybrid modeling techniques** that combine domain knowledge with modern AI.
+I lead the **[SPARKS Lab](/spark/)** (**S**cientific **P**rediction through **A**I **R**esearch & **K**nowledge **S**ystems), where we develop robust and interpretable machine learning algorithms for solving complex scientific problems. My research lies at the intersection of **computer science**, **applied mathematics**, and **scientific computing**, with a focus on **physics-informed machine learning**, **operator learning**, and **hybrid modeling techniques** that combine domain knowledge with modern AI.
 
 ---
 
