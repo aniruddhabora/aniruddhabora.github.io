@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "SPARKS Lab"
-permalink: /sparks/
+permalink: /spark/
 author_profile: true
 ---
 
