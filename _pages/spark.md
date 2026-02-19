@@ -387,7 +387,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 <div class="team-tier">
   <div class="tier-label alumni">ALUMNI & PAST MENTEES</div>
 
-**Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
+* **Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
 </div>
 
 ---
@@ -428,18 +428,6 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 
 ---
 
-## Collaborators
-
-<div class="collab-logos">
-  <span>🟤 Brown University</span>
-  <span>🟢 Argonne National Lab (ALCF)</span>
-  <span>🔵 Pacific Northwest National Lab</span>
-  <span>🔴 Louisiana Tech University</span>
-  <span>🟠 MIT</span>
-  <span>🟣 Northwestern University</span>
-</div>
-
----
 
 ## Grants & Funding
 
