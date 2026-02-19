@@ -315,7 +315,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
     <div class="info">
       Texas State University<br>
       Ph.D., Louisiana Tech University<br>
-      Postdoc, Brown University (with G.E. Karniadakis)<br>
+      Postdoc, Brown University <br>
       <a href="mailto:aniruddha_bora@txstate.edu">aniruddha_bora@txstate.edu</a>
     </div>
   </div>
@@ -372,7 +372,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
     <!-- ======================================================== -->
     <div class="member-card">
       <div class="member-photo">
-        <img src="/images/student2.jpg" alt="Student 2 Name">
+        <img src="/images/student2.png" alt="Student 2 Name">
       </div>
       <!-- If no photo, use avatar instead — delete member-photo div above and uncomment:
       <div class="member-avatar" style="background: linear-gradient(135deg, #8B5CF6, #F59E0B);">S2</div>
