@@ -323,21 +323,16 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 
 <div class="org-connector"></div>
 
-<!-- ===== TIER 2: GRADUATE STUDENTS ===== -->
 <div class="team-tier">
   <div class="tier-label grad">GRADUATE STUDENTS</div>
   <div class="member-grid">
-    <div class="member-card open-card grad-open">
-      <div class="member-avatar grad-placeholder">?</div>
-      <h4>Open Position</h4>
-      <div class="role grad-role">Ph.D. Student (Fall 2026)</div>
-      <div class="info">Funded position available!<br>See details below.</div>
-    </div>
-    <div class="member-card open-card grad-open">
-      <div class="member-avatar grad-placeholder">?</div>
-      <h4>Open Position</h4>
-      <div class="role grad-role">Master's Student</div>
-      <div class="info">Motivated students welcome<br>to reach out.</div>
+    <div class="member-card">
+      <div class="member-photo">
+        <img src="/images/rajnish.jpg" alt="Rajnish Kumar">
+      </div>
+      <h4>Rajnish Kumar</h4>
+      <div class="role grad-role">Ph.D. Student (Part-time)</div>
+      <div class="info">Department of Computer Science<br>Texas State University</div>
     </div>
   </div>
 </div>
@@ -392,7 +387,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 <div class="team-tier">
   <div class="tier-label alumni">ALUMNI & PAST MENTEES</div>
 
-  * **Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
+**Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
 </div>
 
 ---
