@@ -1,35 +1,40 @@
 ---
 layout: archive
-title: "SPARK Lab"
-permalink: /spark/
+title: "SPARKS Lab"
+permalink: /sparks/
 author_profile: true
 ---
 
 <style>
-  .spark-header {
+  /* ===== HEADER ===== */
+  .sparks-header {
     text-align: center;
-    margin-bottom: 2em;
-    padding: 2em 1.5em;
+    margin-bottom: 2.5em;
+    padding: 2.5em 1.5em 2em;
     background: linear-gradient(135deg, #0a0e1a 0%, #111827 100%);
-    border-radius: 16px;
+    border-radius: 20px;
     border: 1px solid rgba(245, 158, 11, 0.15);
   }
-  .spark-header img {
-    width: 180px;
-    margin-bottom: 0.8em;
+  .sparks-header img {
+    width: 260px;
+    margin-bottom: 1em;
+    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.15));
   }
-  .spark-header h2 {
+  .sparks-header h2 {
     color: #F59E0B;
-    font-size: 1.1em;
+    font-size: 1.05em;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     margin: 0;
+    text-transform: uppercase;
   }
-  .spark-header p {
+  .sparks-header p {
     color: #94A3B8;
-    font-size: 0.9em;
+    font-size: 0.88em;
     margin-top: 0.5em;
   }
+
+  /* ===== RESEARCH AREAS ===== */
   .research-areas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -46,34 +51,127 @@ author_profile: true
   .area-card:hover {
     border-color: #F59E0B;
     box-shadow: 0 4px 12px rgba(245, 158, 11, 0.1);
+    transform: translateY(-2px);
   }
   .area-card .emoji { font-size: 1.5em; margin-bottom: 8px; }
   .area-card h4 { margin: 0 0 6px; font-size: 0.95em; color: #1e293b; }
   .area-card p { margin: 0; font-size: 0.82em; color: #64748b; line-height: 1.5; }
+
+  /* ===== TEAM — HIERARCHY ===== */
+  .team-tier {
+    margin-bottom: 2em;
+  }
+  .tier-label {
+    font-size: 0.78em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #94A3B8;
+    margin-bottom: 12px;
+    padding-left: 4px;
+  }
+  .tier-label.pi { color: #F59E0B; border-left: 3px solid #F59E0B; padding-left: 10px; }
+  .tier-label.grad { color: #06B6D4; border-left: 3px solid #06B6D4; padding-left: 10px; }
+  .tier-label.ugrad { color: #8B5CF6; border-left: 3px solid #8B5CF6; padding-left: 10px; }
+  .tier-label.alumni { color: #64748B; border-left: 3px solid #94A3B8; padding-left: 10px; }
+
+  /* PI card — larger, centered */
+  .pi-card {
+    max-width: 420px;
+    margin: 0 auto 8px;
+    padding: 28px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+    border: 2px solid rgba(245, 158, 11, 0.3);
+    text-align: center;
+  }
+  .pi-card .pi-photo {
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 14px;
+    overflow: hidden;
+    border: 3px solid #F59E0B;
+  }
+  .pi-card .pi-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .pi-card .pi-avatar {
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #F59E0B, #EF4444);
+    margin: 0 auto 14px;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 700; font-size: 2em;
+    border: 3px solid #F59E0B;
+  }
+  .pi-card h4 { margin: 0 0 4px; font-size: 1.15em; color: #1e293b; }
+  .pi-card .role { font-size: 0.85em; color: #F59E0B; font-weight: 600; margin-bottom: 6px; }
+  .pi-card .info { font-size: 0.82em; color: #64748b; line-height: 1.6; }
+  .pi-card .info a { color: #d97706; }
+
+  /* Member grid — grad & undergrad */
   .member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 16px;
-    margin: 1em 0 2em;
+    margin: 0 0 8px;
   }
   .member-card {
-    padding: 20px;
-    border-radius: 12px;
+    padding: 22px 18px;
+    border-radius: 14px;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     text-align: center;
+    transition: all 0.2s ease;
+  }
+  .member-card:hover {
+    border-color: rgba(6, 182, 212, 0.3);
+    transform: translateY(-2px);
+  }
+  .member-card .member-photo {
+    width: 90px; height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    overflow: hidden;
+    border: 3px solid #e2e8f0;
+  }
+  .member-card .member-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
   }
   .member-card .member-avatar {
-    width: 80px; height: 80px;
+    width: 90px; height: 90px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #F59E0B, #06B6D4);
     margin: 0 auto 12px;
     display: flex; align-items: center; justify-content: center;
     color: white; font-weight: 700; font-size: 1.4em;
   }
-  .member-card h4 { margin: 0 0 4px; font-size: 0.95em; }
-  .member-card .role { font-size: 0.8em; color: #F59E0B; margin-bottom: 4px; }
-  .member-card .info { font-size: 0.78em; color: #64748b; }
+  .member-card h4 { margin: 0 0 4px; font-size: 0.95em; color: #1e293b; }
+  .member-card .role { font-size: 0.8em; font-weight: 500; margin-bottom: 6px; }
+  .member-card .role.grad-role { color: #06B6D4; }
+  .member-card .role.ugrad-role { color: #8B5CF6; }
+  .member-card .info { font-size: 0.78em; color: #64748b; line-height: 1.4; }
+  .member-card .quote {
+    font-size: 0.76em;
+    color: #475569;
+    font-style: italic;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+    line-height: 1.4;
+  }
+
+  /* Open position cards */
+  .open-card {
+    border: 2px dashed;
+  }
+  .open-card.grad-open { border-color: #06B6D4; background: #f0fdfa; }
+  .open-card.ugrad-open { border-color: #8B5CF6; background: #f5f3ff; }
+  .open-card .member-avatar.grad-placeholder { background: linear-gradient(135deg, #e2e8f0, #cffafe); color: #06B6D4; }
+  .open-card .member-avatar.ugrad-placeholder { background: linear-gradient(135deg, #e2e8f0, #ede9fe); color: #8B5CF6; }
+
+  /* ===== PUBLICATIONS ===== */
   .pub-highlight {
     padding: 14px 18px;
     border-left: 3px solid #F59E0B;
@@ -84,9 +182,11 @@ author_profile: true
   .pub-highlight .pub-title { font-weight: 600; font-size: 0.9em; color: #1e293b; margin-bottom: 4px; }
   .pub-highlight .pub-venue { font-size: 0.8em; color: #F59E0B; }
   .pub-highlight .pub-authors { font-size: 0.78em; color: #64748b; }
+
+  /* ===== JOIN BOX ===== */
   .join-box {
     padding: 1.5em;
-    border-radius: 12px;
+    border-radius: 14px;
     background: linear-gradient(135deg, #fffbeb, #f0fdfa);
     border: 1px solid #F59E0B;
     text-align: center;
@@ -94,7 +194,7 @@ author_profile: true
   }
   .join-box h3 { color: #92400e; margin-bottom: 0.5em; }
   .join-box p { color: #475569; font-size: 0.9em; }
-  .join-box a {
+  .join-box a.join-btn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 24px;
@@ -105,36 +205,56 @@ author_profile: true
     font-weight: 600;
     font-size: 0.9em;
   }
-  .join-box a:hover { background: #d97706; }
+  .join-box a.join-btn:hover { background: #d97706; }
+
+  /* ===== COLLABORATORS ===== */
   .collab-logos {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 12px;
     align-items: center;
     justify-content: center;
     margin: 1em 0 2em;
-    opacity: 0.7;
   }
   .collab-logos span {
-    font-size: 0.85em;
+    font-size: 0.82em;
     color: #475569;
     padding: 8px 16px;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     background: #f8fafc;
+    transition: all 0.2s ease;
+  }
+  .collab-logos span:hover {
+    border-color: #F59E0B;
+    background: #fffbeb;
+  }
+
+  /* ===== ORG CHART CONNECTOR ===== */
+  .org-connector {
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, #F59E0B, #06B6D4);
+    margin: 0 auto;
+    opacity: 0.3;
+  }
+  .org-connector.grad-to-ugrad {
+    background: linear-gradient(to bottom, #06B6D4, #8B5CF6);
   }
 </style>
 
-<!-- SPARK Header -->
-<div class="spark-header">
-  <img src="/images/spark_logo.svg" alt="SPARK Lab Logo">
-  <h2>SCIENTIFIC PREDICTION THROUGH AI RESEARCH & KNOWLEDGE</h2>
+<!-- ========================================= -->
+<!-- SPARKS HEADER with BIGGER LOGO -->
+<!-- ========================================= -->
+<div class="sparks-header">
+  <img src="/images/sparks_logo.svg" alt="SPARKS Lab Logo">
+  <h2>Scientific Prediction through AI Research, Knowledge & Simulation</h2>
   <p>Department of Computer Science · Texas State University · San Marcos, TX</p>
 </div>
 
-## About SPARK
+## About SPARKS
 
-The **SPARK Lab** (Scientific Prediction through AI Research & Knowledge) develops next-generation AI methods that are grounded in scientific principles. We build machine learning algorithms that don't just fit data — they respect the laws of physics, scale to real-world complexity, and provide interpretable insights for scientific discovery.
+The **SPARKS Lab** (**S**cientific **P**rediction through **A**I **R**esearch, **K**nowledge & **S**imulation) develops next-generation AI methods that are grounded in scientific principles. We build machine learning algorithms that don't just fit data — they respect the laws of physics, scale to real-world complexity, and provide interpretable insights for scientific discovery.
 
 Our work spans **physics-informed neural networks**, **neural operators**, **generative AI for science**, and **hybrid modeling** — with applications ranging from climate modeling and turbulence to nanoscale heat conduction and metamaterial design.
 
@@ -179,31 +299,101 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 
 ## Team
 
-<div class="member-grid">
-  <div class="member-card">
-    <div class="member-avatar">AB</div>
+<!-- ===== TIER 1: PRINCIPAL INVESTIGATOR ===== -->
+<div class="team-tier">
+  <div class="tier-label pi">PRINCIPAL INVESTIGATOR</div>
+  <div class="pi-card">
+    <!-- OPTION A: Use your photo (recommended) -->
+    <div class="pi-photo">
+      <img src="/images/profile_2.png" alt="Dr. Aniruddha Bora">
+    </div>
+    <!-- OPTION B: If no photo, use avatar instead — delete OPTION A and uncomment below:
+    <div class="pi-avatar">AB</div>
+    -->
     <h4>Dr. Aniruddha Bora</h4>
-    <div class="role">Principal Investigator</div>
-    <div class="info">Assistant Professor, Computer Science<br>Texas State University<br>
-    <a href="mailto:aniruddha_bora@txstate.edu">aniruddha_bora@txstate.edu</a></div>
-  </div>
-  <div class="member-card" style="border: 2px dashed #F59E0B; background: #fffbeb;">
-    <div class="member-avatar" style="background: linear-gradient(135deg, #e2e8f0, #cbd5e1); color: #94a3b8;">?</div>
-    <h4>Open Position</h4>
-    <div class="role">Ph.D. Student (Fall 2026)</div>
-    <div class="info">Funded position available!<br>See details below.</div>
-  </div>
-  <div class="member-card" style="border: 2px dashed #06B6D4; background: #f0fdfa;">
-    <div class="member-avatar" style="background: linear-gradient(135deg, #e2e8f0, #cbd5e1); color: #94a3b8;">?</div>
-    <h4>Open Position</h4>
-    <div class="role">Master's / Undergraduate RA</div>
-    <div class="info">Motivated students welcome<br>to reach out.</div>
+    <div class="role">Assistant Professor, Computer Science</div>
+    <div class="info">
+      Texas State University<br>
+      Ph.D., Louisiana Tech University<br>
+      Postdoc, Brown University (with G.E. Karniadakis)<br>
+      <a href="mailto:aniruddha_bora@txstate.edu">aniruddha_bora@txstate.edu</a>
+    </div>
   </div>
 </div>
 
-### Past Mentees
+<div class="org-connector"></div>
 
-* **Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
+<!-- ===== TIER 2: GRADUATE STUDENTS ===== -->
+<div class="team-tier">
+  <div class="tier-label grad">GRADUATE STUDENTS</div>
+  <div class="member-grid">
+    <div class="member-card open-card grad-open">
+      <div class="member-avatar grad-placeholder">?</div>
+      <h4>Open Position</h4>
+      <div class="role grad-role">Ph.D. Student (Fall 2026)</div>
+      <div class="info">Funded position available!<br>See details below.</div>
+    </div>
+    <div class="member-card open-card grad-open">
+      <div class="member-avatar grad-placeholder">?</div>
+      <h4>Open Position</h4>
+      <div class="role grad-role">Master's Student</div>
+      <div class="info">Motivated students welcome<br>to reach out.</div>
+    </div>
+  </div>
+</div>
+
+<div class="org-connector grad-to-ugrad"></div>
+
+<!-- ===== TIER 3: UNDERGRADUATE STUDENTS ===== -->
+<div class="team-tier">
+  <div class="tier-label ugrad">UNDERGRADUATE RESEARCHERS</div>
+  <div class="member-grid">
+
+    <!-- ======================================================== -->
+    <!-- UNDERGRAD 1: Replace placeholders with actual info        -->
+    <!-- To add photo: save image to /images/ folder, then update  -->
+    <!-- the <img src="..."> path below                            -->
+    <!-- ======================================================== -->
+    <div class="member-card">
+      <div class="member-photo">
+        <img src="/images/student1.jpeg" alt="Student 1 Name">
+      </div>
+      <!-- If no photo, use avatar instead — delete member-photo div above and uncomment:
+      <div class="member-avatar" style="background: linear-gradient(135deg, #8B5CF6, #06B6D4);">S1</div>
+      -->
+      <h4>Student 1 Pawan Pradhan </h4>
+      <div class="role ugrad-role">Undergraduate Researcher</div>
+      <div class="info">Mechanical engineering, Texas State University</div>
+      <div class="quote">"I transform ideas into real-world systems."</div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- UNDERGRAD 2: Replace placeholders with actual info        -->
+    <!-- ======================================================== -->
+    <div class="member-card">
+      <div class="member-photo">
+        <img src="/images/student2.jpg" alt="Student 2 Name">
+      </div>
+      <!-- If no photo, use avatar instead — delete member-photo div above and uncomment:
+      <div class="member-avatar" style="background: linear-gradient(135deg, #8B5CF6, #F59E0B);">S2</div>
+      -->
+      <h4>Student 2 Name</h4>
+      <div class="role ugrad-role">Undergraduate Researcher</div>
+      <div class="info">Department, Texas State University</div>
+      <div class="quote">"Their one-line quote goes here."</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="org-connector grad-to-ugrad"></div>
+
+<!-- ===== TIER 4: ALUMNI / PAST MENTEES ===== -->
+<div class="team-tier">
+  <div class="tier-label alumni">ALUMNI & PAST MENTEES</div>
+
+  * **Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
+</div>
 
 ---
 
@@ -234,7 +424,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 </div>
 
 <div class="pub-highlight">
-  <div class="pub-title">XAI4Climate: Attributing the role of climate change on extreme-weather precursors</div>
+  <div class="pub-title">XAI4Extremes: An interpretable ML framework for understanding extreme-weather precursors</div>
   <div class="pub-authors">J. Wei, A. Bora, V. Oommen, et al.</div>
   <div class="pub-venue">ICLR 2025 Workshop</div>
 </div>
@@ -267,7 +457,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 
 ## HPC Resources
 
-The SPARK Lab has access to world-class computing infrastructure:
+The SPARKS Lab has access to world-class computing infrastructure:
 
 * **ALCF Polaris** — HPE Cray EX (AMD EPYC + NVIDIA A100)
 * **ALCF Aurora** — HPE Cray EX (Intel Sapphire Rapids + Intel Data Center GPU Max)
@@ -276,11 +466,11 @@ The SPARK Lab has access to world-class computing infrastructure:
 ---
 
 <div class="join-box">
-  <h3>🔥 Join the SPARK Lab!</h3>
+  <h3>🔥 Join the SPARKS Lab!</h3>
   <p>I am recruiting <strong>one funded Ph.D. student</strong> for Fall 2026 and welcome motivated Master's and undergraduate researchers.<br>
   Looking for students with backgrounds in <strong>CS, Applied Math, Physics, or Engineering</strong> interested in:</p>
   <p><strong>Machine learning for physical systems · Scientific & interpretable AI · Computational modeling using AI</strong></p>
-  <a href="mailto:aniruddha_bora@txstate.edu">📧 Apply Now — aniruddha_bora@txstate.edu</a>
+  <a class="join-btn" href="mailto:aniruddha_bora@txstate.edu">📧 Apply Now — aniruddha_bora@txstate.edu</a>
 </div>
 
 ---
