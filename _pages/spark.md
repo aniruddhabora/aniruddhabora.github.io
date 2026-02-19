@@ -377,10 +377,10 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
       <!-- If no photo, use avatar instead — delete member-photo div above and uncomment:
       <div class="member-avatar" style="background: linear-gradient(135deg, #8B5CF6, #F59E0B);">S2</div>
       -->
-      <h4>Student 2 Name</h4>
+      <h4>Student 2 Arjun Gyawali</h4>
       <div class="role ugrad-role">Undergraduate Researcher</div>
-      <div class="info">Department, Texas State University</div>
-      <div class="quote">"Their one-line quote goes here."</div>
+      <div class="info">Computer Science, Texas State University</div>
+      <div class="quote">"I don't just call APIs and tune hyperparameters, I trace the math down to the gradient, because black boxes don't teach you anything."</div>
     </div>
 
   </div>
