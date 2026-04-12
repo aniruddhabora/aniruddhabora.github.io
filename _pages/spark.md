@@ -326,6 +326,16 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 <div class="team-tier">
   <div class="tier-label grad">GRADUATE STUDENTS</div>
   <div class="member-grid">
+
+    <div class="member-card">
+      <div class="member-photo">
+        <img src="/images/coov_txstate.jpg" alt="Rajnish Kumar">
+      </div>
+      <h4>Christopher M. Coovrey</h4>
+      <div class="role grad-role">Ph.D. Student</div>
+      <div class="info">Department of Computer Science<br>Texas State University</div>
+      <div class="quote">"I'm a stochastic gardener, there are no perfect rows nor are there mistakes, only experiments."</div>
+      
     <div class="member-card">
       <div class="member-photo">
         <img src="/images/Rajnish.jpg" alt="Rajnish Kumar">
