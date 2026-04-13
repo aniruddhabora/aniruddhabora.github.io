@@ -29,9 +29,13 @@ I lead the **[SPARKS Lab](/spark/)** (**S**cientific **P**rediction through **A*
 
 ---
 
-### Recruiting Ph.D. Students (Fall 2026)
+### Recruiting Postdoc (Fall 2026)
+I am currently **recruiting one Postdoc** to join my research group starting July 01, 2026 at Texas State University. If you are interested, please reach out to me.
 
+
+### Recruiting Ph.D. Students (Fall 2026)
 I am currently **recruiting one funded Ph.D. student** to join my research group in Fall 2026 at Texas State University. I am also interested in working with motivated Master's students who are passionate about research.
+
 If you're interested in working on:
 
 - **Machine learning for physical systems**
