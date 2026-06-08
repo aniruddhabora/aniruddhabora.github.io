@@ -27,11 +27,67 @@ author_profile: true
     border-radius: 20px;
     border: 1px solid rgba(245, 158, 11, 0.15);
   }
-  .sparks-header img {
+  /* ===== ANIMATED LOGO: two orbs collide and ignite the logo ===== */
+  .logo-stage {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    line-height: 0;
+  }
+  .spark-logo {
     width: 360px;
     max-width: 90%;
-    margin-bottom: 1em;
+    display: block;
+    position: relative;
+    z-index: 1;
     filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.15));
+  }
+  .collider, .spark-burst {
+    position: absolute;
+    top: 50%; left: 50%;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;            /* hidden by default; only animation reveals them */
+    z-index: 5;
+  }
+  .collider { width: 64px; height: 64px; margin: -32px 0 0 -32px; filter: blur(1px); }
+  .c-left  { background: radial-gradient(circle at 35% 35%, #fde68a, #F59E0B); box-shadow: 0 0 30px rgba(245,158,11,0.75); }
+  .c-right { background: radial-gradient(circle at 35% 35%, #a5f3fc, #06B6D4); box-shadow: 0 0 30px rgba(6,182,212,0.75); }
+  .spark-burst {
+    width: 44px; height: 44px; margin: -22px 0 0 -22px;
+    background: radial-gradient(circle, #ffffff 0%, #fde68a 40%, rgba(245,158,11,0) 72%);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .spark-logo { opacity: 0; transform: scale(0.4); animation: logoReveal 1s ease-out 0.85s forwards; }
+    .c-left     { animation: collideLeft  1s cubic-bezier(.6,0,.4,1) 0.2s forwards; }
+    .c-right    { animation: collideRight 1s cubic-bezier(.6,0,.4,1) 0.2s forwards; }
+    .spark-burst{ animation: burst 0.6s ease-out 0.95s forwards; }
+
+    @keyframes collideLeft {
+      0%   { opacity: 0; transform: translateX(-210px) scale(0.6); }
+      15%  { opacity: 1; }
+      70%  { opacity: 1; transform: translateX(0) scale(1); }
+      82%  { opacity: 1; transform: translateX(0) scale(1.15); }
+      100% { opacity: 0; transform: translateX(0) scale(0.2); }
+    }
+    @keyframes collideRight {
+      0%   { opacity: 0; transform: translateX(210px) scale(0.6); }
+      15%  { opacity: 1; }
+      70%  { opacity: 1; transform: translateX(0) scale(1); }
+      82%  { opacity: 1; transform: translateX(0) scale(1.15); }
+      100% { opacity: 0; transform: translateX(0) scale(0.2); }
+    }
+    @keyframes burst {
+      0%   { opacity: 0; transform: scale(0.2); }
+      30%  { opacity: 1; transform: scale(1.4); }
+      100% { opacity: 0; transform: scale(2.8); }
+    }
+    @keyframes logoReveal {
+      0%   { opacity: 0; transform: scale(0.4); }
+      60%  { opacity: 1; transform: scale(1.08); }
+      100% { opacity: 1; transform: scale(1); }
+    }
   }
   .sparks-header h2 {
     color: #F59E0B;
@@ -296,7 +352,12 @@ author_profile: true
 <!-- SPARKS HEADER with BIGGER LOGO -->
 <!-- ========================================= -->
 <div class="sparks-header">
-  <img src="/images/sparks_logo.svg" alt="SPARKS Lab Logo">
+  <div class="logo-stage">
+    <span class="collider c-left"></span>
+    <span class="collider c-right"></span>
+    <span class="spark-burst"></span>
+    <img src="/images/sparks_logo.svg" alt="SPARKS Lab Logo" class="spark-logo">
+  </div>
   <h2>Scientific Prediction through AI Research, Knowledge & Simulation</h2>
   <p>Department of Computer Science · Texas State University · San Marcos, TX</p>
 </div>
