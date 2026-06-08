@@ -20,6 +20,9 @@ main:
   - title: "Awards"
     url: /awards/
  
+  - title: "Grants"
+    url: /grants/
+ 
   - title: "SPARKS Lab"
     url: /spark/
   
