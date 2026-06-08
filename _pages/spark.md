@@ -27,7 +27,7 @@ author_profile: true
     border-radius: 20px;
     border: 1px solid rgba(245, 158, 11, 0.15);
   }
-  /* ===== ANIMATED LOGO: two orbs collide and ignite the logo ===== */
+  /* ===== ANIMATED LOGO: two orbs spiral in while spinning, collide, ignite the logo ===== */
   .logo-stage {
     position: relative;
     display: inline-block;
@@ -42,41 +42,55 @@ author_profile: true
     z-index: 1;
     filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.15));
   }
-  .collider, .spark-burst {
+  /* an .orbit is a zero-size pivot at the center; its child .orb is offset by a
+     radius, so rotating the pivot makes the orb travel in a circle */
+  .orbit {
     position: absolute;
     top: 50%; left: 50%;
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: 0;            /* hidden by default; only animation reveals them */
+    width: 0; height: 0;
     z-index: 5;
+    pointer-events: none;
   }
-  .collider { width: 64px; height: 64px; margin: -32px 0 0 -32px; filter: blur(1px); }
-  .c-left  { background: radial-gradient(circle at 35% 35%, #fde68a, #F59E0B); box-shadow: 0 0 30px rgba(245,158,11,0.75); }
-  .c-right { background: radial-gradient(circle at 35% 35%, #a5f3fc, #06B6D4); box-shadow: 0 0 30px rgba(6,182,212,0.75); }
+  .orb {
+    position: absolute;
+    top: 0; left: 0;
+    width: 58px; height: 58px;
+    margin: -29px 0 0 -29px;
+    border-radius: 50%;
+    opacity: 0;            /* hidden by default; only the animation reveals it */
+    filter: blur(1px);
+  }
+  .c-left  { background: radial-gradient(circle at 35% 35%, #fde68a, #F59E0B); box-shadow: 0 0 26px 4px rgba(245,158,11,0.7); }
+  .c-right { background: radial-gradient(circle at 35% 35%, #a5f3fc, #06B6D4); box-shadow: 0 0 26px 4px rgba(6,182,212,0.7); }
   .spark-burst {
-    width: 44px; height: 44px; margin: -22px 0 0 -22px;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 46px; height: 46px;
+    margin: -23px 0 0 -23px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 6;
+    pointer-events: none;
     background: radial-gradient(circle, #ffffff 0%, #fde68a 40%, rgba(245,158,11,0) 72%);
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    .spark-logo { opacity: 0; transform: scale(0.4); animation: logoReveal 1s ease-out 0.85s forwards; }
-    .c-left     { animation: collideLeft  1s cubic-bezier(.6,0,.4,1) 0.2s forwards; }
-    .c-right    { animation: collideRight 1s cubic-bezier(.6,0,.4,1) 0.2s forwards; }
-    .spark-burst{ animation: burst 0.6s ease-out 0.95s forwards; }
+    /* pivots spin (~2 turns); the two start 180deg apart and stay opposite */
+    .orbit-a    { animation: spin  1.15s cubic-bezier(.45,0,.55,1) 0.1s forwards; }
+    .orbit-b    { animation: spinB 1.15s cubic-bezier(.45,0,.55,1) 0.1s forwards; }
+    /* orbs reel their radius inward from 150px to 0 while spinning */
+    .orb        { animation: reelIn 1.15s cubic-bezier(.45,0,.55,1) 0.1s forwards; }
+    .spark-burst{ animation: burst 0.6s ease-out 1.15s forwards; }
+    .spark-logo { opacity: 0; transform: scale(0.4); animation: logoReveal 0.9s ease-out 1.1s forwards; }
 
-    @keyframes collideLeft {
-      0%   { opacity: 0; transform: translateX(-210px) scale(0.6); }
-      15%  { opacity: 1; }
-      70%  { opacity: 1; transform: translateX(0) scale(1); }
-      82%  { opacity: 1; transform: translateX(0) scale(1.15); }
-      100% { opacity: 0; transform: translateX(0) scale(0.2); }
-    }
-    @keyframes collideRight {
-      0%   { opacity: 0; transform: translateX(210px) scale(0.6); }
-      15%  { opacity: 1; }
-      70%  { opacity: 1; transform: translateX(0) scale(1); }
-      82%  { opacity: 1; transform: translateX(0) scale(1.15); }
-      100% { opacity: 0; transform: translateX(0) scale(0.2); }
+    @keyframes spin  { from { transform: rotate(0deg);   } to { transform: rotate(740deg); } }
+    @keyframes spinB { from { transform: rotate(180deg); } to { transform: rotate(920deg); } }
+    @keyframes reelIn {
+      0%   { opacity: 0; transform: translateX(150px) scale(0.8); }
+      12%  { opacity: 1; }
+      80%  { opacity: 1; transform: translateX(26px) scale(1); }
+      94%  { opacity: 1; transform: translateX(0)    scale(1.15); }
+      100% { opacity: 0; transform: translateX(0)    scale(0.2); }
     }
     @keyframes burst {
       0%   { opacity: 0; transform: scale(0.2); }
@@ -353,8 +367,8 @@ author_profile: true
 <!-- ========================================= -->
 <div class="sparks-header">
   <div class="logo-stage">
-    <span class="collider c-left"></span>
-    <span class="collider c-right"></span>
+    <span class="orbit orbit-a"><span class="orb c-left"></span></span>
+    <span class="orbit orbit-b"><span class="orb c-right"></span></span>
     <span class="spark-burst"></span>
     <img src="/images/sparks_logo.svg" alt="SPARKS Lab Logo" class="spark-logo">
   </div>
