@@ -28,8 +28,8 @@ author_profile: true
     border: 1px solid rgba(245, 158, 11, 0.15);
   }
   .sparks-header img {
-    width: 260px;
-    max-width: 80%;
+    width: 360px;
+    max-width: 90%;
     margin-bottom: 1em;
     filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.15));
   }
