@@ -6,6 +6,18 @@ author_profile: true
 ---
 
 <style>
+  /* Harmonize the sitewide accent (indigo) to the SPARKS amber on this page only.
+     This recolors the global heading bars, link underlines, and buttons here. */
+  :root {
+    --accent: #F59E0B;
+    --accent-strong: #d97706;
+    --accent-soft: rgba(245, 158, 11, 0.12);
+  }
+  /* The branded header below is this page's hero, so hide the default page title */
+  .page__title { display: none; }
+  /* Keep the join button from picking up the global link-underline animation */
+  .join-box a.join-btn { background-image: none; }
+
   /* ===== HEADER ===== */
   .sparks-header {
     text-align: center;
@@ -17,6 +29,7 @@ author_profile: true
   }
   .sparks-header img {
     width: 260px;
+    max-width: 80%;
     margin-bottom: 1em;
     filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.15));
   }
@@ -241,6 +254,42 @@ author_profile: true
   .org-connector.grad-to-ugrad {
     background: linear-gradient(to bottom, #06B6D4, #8B5CF6);
   }
+
+  /* ===== ALUMNI LIST ===== */
+  .alumni-list { list-style: none; margin: 0; padding: 0; }
+  .alumni-list li {
+    padding: 10px 14px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #94A3B8;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85em;
+    color: #475569;
+    margin-bottom: 8px;
+  }
+
+  /* ===== DARK MODE ===== */
+  html[data-theme="dark"] .area-card,
+  html[data-theme="dark"] .member-card,
+  html[data-theme="dark"] .alumni-list li,
+  html[data-theme="dark"] .collab-logos span {
+    background: #1f2430;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  html[data-theme="dark"] .area-card h4,
+  html[data-theme="dark"] .member-card h4 { color: #e5e7eb; }
+  html[data-theme="dark"] .area-card p,
+  html[data-theme="dark"] .member-card .info,
+  html[data-theme="dark"] .alumni-list li,
+  html[data-theme="dark"] .collab-logos span { color: #9aa4b2; }
+  html[data-theme="dark"] .member-card .quote { color: #cbd5e1; border-top-color: rgba(255,255,255,0.08); }
+  html[data-theme="dark"] .pub-highlight { background: #251f10; }
+  html[data-theme="dark"] .pub-highlight .pub-title { color: #f1f5f9; }
+  html[data-theme="dark"] .join-box { background: linear-gradient(135deg, #251f10, #10211f); }
+  html[data-theme="dark"] .join-box h3 { color: #fcd34d; }
+  html[data-theme="dark"] .join-box p { color: #cbd5e1; }
+  html[data-theme="dark"] .pi-card { background: linear-gradient(135deg, #2a2410, #2a2008); }
+  html[data-theme="dark"] .pi-card h4 { color: #f1f5f9; }
 </style>
 
 <!-- ========================================= -->
@@ -303,13 +352,9 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 <div class="team-tier">
   <div class="tier-label pi">PRINCIPAL INVESTIGATOR</div>
   <div class="pi-card">
-    <!-- OPTION A: Use your photo (recommended) -->
     <div class="pi-photo">
       <img src="/images/profile_2.png" alt="Dr. Aniruddha Bora">
     </div>
-    <!-- OPTION B: If no photo, use avatar instead — delete OPTION A and uncomment below:
-    <div class="pi-avatar">AB</div>
-    -->
     <h4>Dr. Aniruddha Bora</h4>
     <div class="role">Assistant Professor, Computer Science</div>
     <div class="info">
@@ -329,7 +374,7 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 
     <div class="member-card">
       <div class="member-photo">
-        <img src="/images/coov_txstate.jpg" alt="Rajnish Kumar">
+        <img src="/images/coov_txstate.jpg" alt="Christopher M. Coovrey">
       </div>
       <h4>Christopher M. Coovrey</h4>
       <div class="role grad-role">Ph.D. Student</div>
@@ -355,34 +400,20 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
   <div class="tier-label ugrad">UNDERGRADUATE RESEARCHERS</div>
   <div class="member-grid">
 
-    <!-- ======================================================== -->
-    <!-- UNDERGRAD 1: Replace placeholders with actual info        -->
-    <!-- To add photo: save image to /images/ folder, then update  -->
-    <!-- the <img src="..."> path below                            -->
-    <!-- ======================================================== -->
     <div class="member-card">
       <div class="member-photo">
-        <img src="/images/student1.jpeg" alt="Student 1 Name">
+        <img src="/images/student1.jpeg" alt="Pawan Pradhan">
       </div>
-      <!-- If no photo, use avatar instead — delete member-photo div above and uncomment:
-      <div class="member-avatar" style="background: linear-gradient(135deg, #8B5CF6, #06B6D4);">S1</div>
-      -->
-      <h4>Pawan Pradhan </h4>
+      <h4>Pawan Pradhan</h4>
       <div class="role ugrad-role">Undergraduate Researcher</div>
       <div class="info">Mechanical engineering, Texas State University</div>
       <div class="quote">"I transform ideas into real-world systems."</div>
     </div>
 
-    <!-- ======================================================== -->
-    <!-- UNDERGRAD 2: Replace placeholders with actual info        -->
-    <!-- ======================================================== -->
     <div class="member-card">
       <div class="member-photo">
-        <img src="/images/student2.png" alt="Student 2 Name">
+        <img src="/images/student2.png" alt="Arjun Gyawali">
       </div>
-      <!-- If no photo, use avatar instead — delete member-photo div above and uncomment:
-      <div class="member-avatar" style="background: linear-gradient(135deg, #8B5CF6, #F59E0B);">S2</div>
-      -->
       <h4>Arjun Gyawali</h4>
       <div class="role ugrad-role">Undergraduate Researcher</div>
       <div class="info">Computer Science, Texas State University</div>
@@ -397,8 +428,9 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 <!-- ===== TIER 4: ALUMNI / PAST MENTEES ===== -->
 <div class="team-tier">
   <div class="tier-label alumni">ALUMNI & PAST MENTEES</div>
-
-* **Sotos Lois** (Imperial College London, 2022–2023) — Mathematical finance using PINNs and operator learning
+  <ul class="alumni-list">
+    <li><strong>Sotos Lois</strong> — Imperial College London, 2022–2023 · Mathematical finance using PINNs and operator learning</li>
+  </ul>
 </div>
 
 ---
