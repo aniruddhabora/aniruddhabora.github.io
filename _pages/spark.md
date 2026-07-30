@@ -456,6 +456,15 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
       <div class="info">Department of Computer Science<br>Texas State University</div>
       <div class="quote">"I'm a stochastic gardener, there are no perfect rows nor are there mistakes, only experiments."</div>
     </div>
+     <div class="member-card">
+      <div class="member-photo">
+        <img src="/images/collin_txst.jpg" alt="Collin Reisman">
+      </div>
+      <h4>Collin Reisman</h4>
+      <div class="role grad-role">Ph.D. Student</div>
+      <div class="info">Department of Computer Science<br>Texas State University</div>
+      <div class="quote">"If you believe in something, don't give up on it until you understand why that belief is wrong - Geoffrey Everest Hinton"</div>
+    </div>
     <div class="member-card">
       <div class="member-photo">
         <img src="/images/Rajnish.jpg" alt="Rajnish Kumar">
