@@ -467,6 +467,17 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
     </div>
     <div class="member-card">
       <div class="member-photo">
+        <img src="/images/keerth.jpg" alt="Keerthana ">
+      </div>
+      <h4>Keerthana Sunil</h4>
+      <div class="role grad-role">Ph.D. Student</div>
+      <div class="info">Department of Computer Science<br>Texas State University</div>
+      <div class="quote">"In continuous pursuit of the global minimum"</div>
+    </div>
+  </div>
+</div>
+ <div class="member-card">
+      <div class="member-photo">
         <img src="/images/Rajnish.jpg" alt="Rajnish Kumar">
       </div>
       <h4>Rajnish Kumar</h4>
