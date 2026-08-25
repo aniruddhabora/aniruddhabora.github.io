@@ -445,46 +445,73 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
 
 <div class="team-tier">
   <div class="tier-label grad">GRADUATE STUDENTS</div>
+
   <div class="member-grid">
 
+    <!-- Christopher -->
     <div class="member-card">
       <div class="member-photo">
         <img src="/images/coov_txstate.jpg" alt="Christopher M. Coovrey">
       </div>
       <h4>Christopher M. Coovrey</h4>
       <div class="role grad-role">Ph.D. Student</div>
-      <div class="info">Department of Computer Science<br>Texas State University</div>
-      <div class="quote">"I'm a stochastic gardener, there are no perfect rows nor are there mistakes, only experiments."</div>
+      <div class="info">
+        Department of Computer Science<br>
+        Texas State University
+      </div>
+      <div class="quote">
+        "I'm a stochastic gardener, there are no perfect rows nor are there mistakes, only experiments."
+      </div>
     </div>
-     <div class="member-card">
+
+    <!-- Collin -->
+    <div class="member-card">
       <div class="member-photo">
         <img src="/images/collin_txst.jpg" alt="Collin Reisman">
       </div>
       <h4>Collin Reisman</h4>
       <div class="role grad-role">Ph.D. Student</div>
-      <div class="info">Department of Computer Science<br>Texas State University</div>
-      <div class="quote">"If you believe in something, don't give up on it until you understand why that belief is wrong - Geoffrey Everest Hinton"</div>
+      <div class="info">
+        Department of Computer Science<br>
+        Texas State University
+      </div>
+      <div class="quote">
+        "If you believe in something, don't give up on it until you understand why that belief is wrong — Geoffrey Everest Hinton"
+      </div>
     </div>
+
+    <!-- Keerthana -->
     <div class="member-card">
       <div class="member-photo">
-        <img src="/images/keerth.jpg" alt="Keerthana ">
+        <img src="/images/keerth.jpg" alt="Keerthana Sunil">
       </div>
       <h4>Keerthana Sunil</h4>
       <div class="role grad-role">Ph.D. Student</div>
-      <div class="info">Department of Computer Science<br>Texas State University</div>
-      <div class="quote">"In continuous pursuit of the global minimum"</div>
+      <div class="info">
+        Department of Computer Science<br>
+        Texas State University
+      </div>
+      <div class="quote">
+        "In continuous pursuit of the global minimum"
+      </div>
     </div>
-  </div>
-</div>
- <div class="member-card">
+
+    <!-- Rajnish -->
+    <div class="member-card">
       <div class="member-photo">
         <img src="/images/Rajnish.jpg" alt="Rajnish Kumar">
       </div>
       <h4>Rajnish Kumar</h4>
       <div class="role grad-role">Ph.D. Student (Part-time)</div>
-      <div class="info">Department of Computer Science<br>Texas State University</div>
-      <div class="quote">"Researching ML methodologies and bridging them with large-scale systems and real-world applications."</div>
+      <div class="info">
+        Department of Computer Science<br>
+        Texas State University
+      </div>
+      <div class="quote">
+        "Researching ML methodologies and bridging them with large-scale systems and real-world applications."
+      </div>
     </div>
+
   </div>
 </div>
 
