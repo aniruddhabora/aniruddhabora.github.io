@@ -542,6 +542,16 @@ Our work spans **physics-informed neural networks**, **neural operators**, **gen
       <div class="quote">"I don't just call APIs and tune hyperparameters, I trace the math down to the gradient, because black boxes don't teach you anything."</div>
     </div>
 
+     <div class="member-card">
+      <div class="member-photo">
+        <img src="/images/prakriti.jpg" alt="Prakriti Gautam">
+      </div>
+      <h4>Prakriti Gautam</h4>
+      <div class="role ugrad-role">Undergraduate Researcher</div>
+      <div class="info">Computer Science, Texas State University</div>
+      <div class="quote">"Every gradient is a whisper from the data — I just learned to listen."</div>
+    </div>
+
   </div>
 </div>
 
