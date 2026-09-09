@@ -96,6 +96,9 @@ author_profile: true
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 
@@ -106,10 +109,11 @@ author_profile: true
 
   .logo-stage {
     position: relative;
-    display: inline-block;
+    display: block;
     width: min(360px, 82%);
-    margin: 0 auto 1.15rem;
+    margin: 0 auto 1.15rem auto;
     line-height: 0;
+    text-align: center;
   }
 
   .logo-stage .hero-logo {
@@ -123,6 +127,11 @@ author_profile: true
     display: block;
     filter: drop-shadow(0 10px 22px rgba(0,0,0,0.28))
             drop-shadow(0 0 18px rgba(245,158,11,0.10));
+  }
+
+  .spark-logo {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .orbit {
@@ -302,6 +311,14 @@ author_profile: true
     font-size: clamp(1.5rem, 3vw, 2.25rem);
     line-height: 1.18;
     letter-spacing: -0.025em;
+  }
+
+  .hero-title,
+  .hero-subtitle,
+  .hero-meta,
+  .hero-nav {
+    width: 100%;
+    text-align: center;
   }
 
   .hero-subtitle {
