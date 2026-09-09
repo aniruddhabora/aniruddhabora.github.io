@@ -98,11 +98,186 @@ author_profile: true
     text-align: center;
   }
 
-  .hero-logo {
+
+  /* =========================
+     ANIMATED SPARKS LOGO
+     Two glowing particles spiral inward, collide, then reveal the logo.
+     ========================= */
+
+  .logo-stage {
+    position: relative;
+    display: inline-block;
     width: min(360px, 82%);
     margin: 0 auto 1.15rem;
+    line-height: 0;
+  }
+
+  .logo-stage .hero-logo {
+    width: 100%;
+    margin: 0;
+  }
+
+  .spark-logo {
+    position: relative;
+    z-index: 2;
     display: block;
-    filter: drop-shadow(0 10px 22px rgba(0,0,0,0.28));
+    filter: drop-shadow(0 10px 22px rgba(0,0,0,0.28))
+            drop-shadow(0 0 18px rgba(245,158,11,0.10));
+  }
+
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .orb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 58px;
+    margin: -29px 0 0 -29px;
+    border-radius: 50%;
+    opacity: 0;
+    filter: blur(1px);
+  }
+
+  .c-left {
+    background: radial-gradient(circle at 35% 35%, #fde68a, #f59e0b);
+    box-shadow: 0 0 26px 4px rgba(245,158,11,0.72);
+  }
+
+  .c-right {
+    background: radial-gradient(circle at 35% 35%, #a5f3fc, #06b6d4);
+    box-shadow: 0 0 26px 4px rgba(6,182,212,0.72);
+  }
+
+  .spark-burst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin: -23px 0 0 -23px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 6;
+    pointer-events: none;
+    background:
+      radial-gradient(
+        circle,
+        #ffffff 0%,
+        #fde68a 38%,
+        rgba(245,158,11,0.15) 58%,
+        rgba(245,158,11,0) 75%
+      );
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .orbit-a {
+      animation: sparksSpinA 1.15s cubic-bezier(.45,0,.55,1) 0.10s forwards;
+    }
+
+    .orbit-b {
+      animation: sparksSpinB 1.15s cubic-bezier(.45,0,.55,1) 0.10s forwards;
+    }
+
+    .orb {
+      animation: sparksReelIn 1.15s cubic-bezier(.45,0,.55,1) 0.10s forwards;
+    }
+
+    .spark-burst {
+      animation: sparksBurst 0.60s ease-out 1.15s forwards;
+    }
+
+    .spark-logo {
+      opacity: 0;
+      transform: scale(0.40);
+      animation: sparksLogoReveal 0.90s ease-out 1.10s forwards;
+    }
+
+    @keyframes sparksSpinA {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(740deg); }
+    }
+
+    @keyframes sparksSpinB {
+      from { transform: rotate(180deg); }
+      to   { transform: rotate(920deg); }
+    }
+
+    @keyframes sparksReelIn {
+      0% {
+        opacity: 0;
+        transform: translateX(150px) scale(0.80);
+      }
+      12% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+        transform: translateX(26px) scale(1);
+      }
+      94% {
+        opacity: 1;
+        transform: translateX(0) scale(1.15);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(0) scale(0.20);
+      }
+    }
+
+    @keyframes sparksBurst {
+      0% {
+        opacity: 0;
+        transform: scale(0.20);
+      }
+      30% {
+        opacity: 1;
+        transform: scale(1.40);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(2.80);
+      }
+    }
+
+    @keyframes sparksLogoReveal {
+      0% {
+        opacity: 0;
+        transform: scale(0.40);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.06);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spark-logo {
+      opacity: 1;
+      transform: none;
+    }
+
+    .orbit,
+    .spark-burst {
+      display: none;
+    }
+  }
+
+  .hero-logo {
+    display: block;
   }
 
   .hero-kicker {
@@ -771,7 +946,12 @@ author_profile: true
   <header class="sparks-hero">
     <div class="hero-inner">
       <div class="hero-kicker">Texas State University · Computer Science</div>
-      <img src="/images/sparks_logo.svg" alt="SPARKS Lab" class="hero-logo">
+      <div class="logo-stage" aria-label="SPARKS Lab animated logo">
+        <span class="orbit orbit-a"><span class="orb c-left"></span></span>
+        <span class="orbit orbit-b"><span class="orb c-right"></span></span>
+        <span class="spark-burst"></span>
+        <img src="/images/sparks_logo.svg" alt="SPARKS Lab" class="hero-logo spark-logo">
+      </div>
 
       <h1 class="hero-title">
         Scientific Prediction through AI Research, Knowledge &amp; Simulation
