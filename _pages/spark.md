@@ -6,622 +6,1219 @@ author_profile: true
 ---
 
 <style>
-  /* Harmonize the sitewide accent (indigo) to the SPARKS amber on this page only.
-     This recolors the global heading bars, link underlines, and buttons here. */
+  /* =========================================================
+     SPARKS LAB — PROFESSIONAL RESEARCH GROUP PAGE
+     ========================================================= */
+
   :root {
-    --accent: #F59E0B;
-    --accent-strong: #d97706;
-    --accent-soft: rgba(245, 158, 11, 0.12);
-  }
-  /* The branded header below is this page's hero, so hide the default page title */
-  .page__title { display: none; }
-  /* Keep the join button from picking up the global link-underline animation */
-  .join-box a.join-btn { background-image: none; }
+    --sparks-navy: #0f172a;
+    --sparks-navy-2: #172033;
+    --sparks-amber: #d97706;
+    --sparks-amber-light: #f59e0b;
+    --sparks-cyan: #0891b2;
+    --sparks-purple: #7c3aed;
 
-  /* ===== HEADER ===== */
-  .sparks-header {
-    text-align: center;
-    margin-bottom: 2.5em;
-    padding: 2.5em 1.5em 2em;
-    background: linear-gradient(135deg, #0a0e1a 0%, #111827 100%);
-    border-radius: 20px;
-    border: 1px solid rgba(245, 158, 11, 0.15);
-  }
-  /* ===== ANIMATED LOGO: two orbs spiral in while spinning, collide, ignite the logo ===== */
-  .logo-stage {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 1em;
-    line-height: 0;
-  }
-  .spark-logo {
-    width: 360px;
-    max-width: 90%;
-    display: block;
-    position: relative;
-    z-index: 1;
-    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.15));
-  }
-  /* an .orbit is a zero-size pivot at the center; its child .orb is offset by a
-     radius, so rotating the pivot makes the orb travel in a circle */
-  .orbit {
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 0; height: 0;
-    z-index: 5;
-    pointer-events: none;
-  }
-  .orb {
-    position: absolute;
-    top: 0; left: 0;
-    width: 58px; height: 58px;
-    margin: -29px 0 0 -29px;
-    border-radius: 50%;
-    opacity: 0;            /* hidden by default; only the animation reveals it */
-    filter: blur(1px);
-  }
-  .c-left  { background: radial-gradient(circle at 35% 35%, #fde68a, #F59E0B); box-shadow: 0 0 26px 4px rgba(245,158,11,0.7); }
-  .c-right { background: radial-gradient(circle at 35% 35%, #a5f3fc, #06B6D4); box-shadow: 0 0 26px 4px rgba(6,182,212,0.7); }
-  .spark-burst {
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 46px; height: 46px;
-    margin: -23px 0 0 -23px;
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 6;
-    pointer-events: none;
-    background: radial-gradient(circle, #ffffff 0%, #fde68a 40%, rgba(245,158,11,0) 72%);
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --text-soft: #94a3b8;
+    --surface: #ffffff;
+    --surface-soft: #f8fafc;
+    --border: #e2e8f0;
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 16px 40px rgba(15, 23, 42, 0.10);
+
+    --accent: var(--sparks-amber);
+    --accent-strong: #b45309;
+    --accent-soft: rgba(217, 119, 6, 0.10);
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    /* pivots spin (~2 turns); the two start 180deg apart and stay opposite */
-    .orbit-a    { animation: spin  1.15s cubic-bezier(.45,0,.55,1) 0.1s forwards; }
-    .orbit-b    { animation: spinB 1.15s cubic-bezier(.45,0,.55,1) 0.1s forwards; }
-    /* orbs reel their radius inward from 150px to 0 while spinning */
-    .orb        { animation: reelIn 1.15s cubic-bezier(.45,0,.55,1) 0.1s forwards; }
-    .spark-burst{ animation: burst 0.6s ease-out 1.15s forwards; }
-    .spark-logo { opacity: 0; transform: scale(0.4); animation: logoReveal 0.9s ease-out 1.1s forwards; }
-
-    @keyframes spin  { from { transform: rotate(0deg);   } to { transform: rotate(740deg); } }
-    @keyframes spinB { from { transform: rotate(180deg); } to { transform: rotate(920deg); } }
-    @keyframes reelIn {
-      0%   { opacity: 0; transform: translateX(150px) scale(0.8); }
-      12%  { opacity: 1; }
-      80%  { opacity: 1; transform: translateX(26px) scale(1); }
-      94%  { opacity: 1; transform: translateX(0)    scale(1.15); }
-      100% { opacity: 0; transform: translateX(0)    scale(0.2); }
-    }
-    @keyframes burst {
-      0%   { opacity: 0; transform: scale(0.2); }
-      30%  { opacity: 1; transform: scale(1.4); }
-      100% { opacity: 0; transform: scale(2.8); }
-    }
-    @keyframes logoReveal {
-      0%   { opacity: 0; transform: scale(0.4); }
-      60%  { opacity: 1; transform: scale(1.08); }
-      100% { opacity: 1; transform: scale(1); }
-    }
+  .page__title {
+    display: none;
   }
-  .sparks-header h2 {
-    color: #F59E0B;
-    font-size: 1.05em;
-    font-weight: 400;
-    letter-spacing: 2.5px;
+
+  .sparks-page {
+    font-size: 0.98rem;
+    color: var(--text-main);
+  }
+
+  .sparks-page * {
+    box-sizing: border-box;
+  }
+
+  .sparks-page a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .sparks-page h2 {
     margin: 0;
-    text-transform: uppercase;
-  }
-  .sparks-header p {
-    color: #94A3B8;
-    font-size: 0.88em;
-    margin-top: 0.5em;
   }
 
-  /* ===== RESEARCH AREAS ===== */
-  .research-areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    margin: 1.5em 0 2em;
-  }
-  .area-card {
-    padding: 20px;
-    border-radius: 12px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s ease;
-  }
-  .area-card:hover {
-    border-color: #F59E0B;
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.1);
-    transform: translateY(-2px);
-  }
-  .area-card .emoji { font-size: 1.5em; margin-bottom: 8px; }
-  .area-card h4 { margin: 0 0 6px; font-size: 0.95em; color: #1e293b; }
-  .area-card p { margin: 0; font-size: 0.82em; color: #64748b; line-height: 1.5; }
+  /* =========================
+     HERO
+     ========================= */
 
-  /* ===== TEAM — HIERARCHY ===== */
-  .team-tier {
-    margin-bottom: 2em;
-  }
-  .tier-label {
-    font-size: 0.78em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: #94A3B8;
-    margin-bottom: 12px;
-    padding-left: 4px;
-  }
-  .tier-label.pi { color: #F59E0B; border-left: 3px solid #F59E0B; padding-left: 10px; }
-  .tier-label.grad { color: #06B6D4; border-left: 3px solid #06B6D4; padding-left: 10px; }
-  .tier-label.ugrad { color: #8B5CF6; border-left: 3px solid #8B5CF6; padding-left: 10px; }
-  .tier-label.alumni { color: #64748B; border-left: 3px solid #94A3B8; padding-left: 10px; }
-
-  /* PI card — larger, centered */
-  .pi-card {
-    max-width: 420px;
-    margin: 0 auto 8px;
-    padding: 28px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #fffbeb, #fef3c7);
-    border: 2px solid rgba(245, 158, 11, 0.3);
-    text-align: center;
-  }
-  .pi-card .pi-photo {
-    width: 110px; height: 110px;
-    border-radius: 50%;
-    margin: 0 auto 14px;
+  .sparks-hero {
+    position: relative;
     overflow: hidden;
-    border: 3px solid #F59E0B;
-  }
-  .pi-card .pi-photo img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-  }
-  .pi-card .pi-avatar {
-    width: 110px; height: 110px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #F59E0B, #EF4444);
-    margin: 0 auto 14px;
-    display: flex; align-items: center; justify-content: center;
-    color: white; font-weight: 700; font-size: 2em;
-    border: 3px solid #F59E0B;
-  }
-  .pi-card h4 { margin: 0 0 4px; font-size: 1.15em; color: #1e293b; }
-  .pi-card .role { font-size: 0.85em; color: #F59E0B; font-weight: 600; margin-bottom: 6px; }
-  .pi-card .info { font-size: 0.82em; color: #64748b; line-height: 1.6; }
-  .pi-card .info a { color: #d97706; }
-
-  /* Member grid — grad & undergrad */
-  .member-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
-    margin: 0 0 8px;
-  }
-  .member-card {
-    padding: 22px 18px;
-    border-radius: 14px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    text-align: center;
-    transition: all 0.2s ease;
-  }
-  .member-card:hover {
-    border-color: rgba(6, 182, 212, 0.3);
-    transform: translateY(-2px);
-  }
-  .member-card .member-photo {
-    width: 90px; height: 90px;
-    border-radius: 50%;
-    margin: 0 auto 12px;
-    overflow: hidden;
-    border: 3px solid #e2e8f0;
-  }
-  .member-card .member-photo img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-  }
-  .member-card .member-avatar {
-    width: 90px; height: 90px;
-    border-radius: 50%;
-    margin: 0 auto 12px;
-    display: flex; align-items: center; justify-content: center;
-    color: white; font-weight: 700; font-size: 1.4em;
-  }
-  .member-card h4 { margin: 0 0 4px; font-size: 0.95em; color: #1e293b; }
-  .member-card .role { font-size: 0.8em; font-weight: 500; margin-bottom: 6px; }
-  .member-card .role.grad-role { color: #06B6D4; }
-  .member-card .role.ugrad-role { color: #8B5CF6; }
-  .member-card .info { font-size: 0.78em; color: #64748b; line-height: 1.4; }
-  .member-card .quote {
-    font-size: 0.76em;
-    color: #475569;
-    font-style: italic;
-    margin-top: 8px;
-    padding-top: 8px;
-    border-top: 1px solid #e2e8f0;
-    line-height: 1.4;
-  }
-
-  /* Open position cards */
-  .open-card {
-    border: 2px dashed;
-  }
-  .open-card.grad-open { border-color: #06B6D4; background: #f0fdfa; }
-  .open-card.ugrad-open { border-color: #8B5CF6; background: #f5f3ff; }
-  .open-card .member-avatar.grad-placeholder { background: linear-gradient(135deg, #e2e8f0, #cffafe); color: #06B6D4; }
-  .open-card .member-avatar.ugrad-placeholder { background: linear-gradient(135deg, #e2e8f0, #ede9fe); color: #8B5CF6; }
-
-  /* ===== PUBLICATIONS ===== */
-  .pub-highlight {
-    padding: 14px 18px;
-    border-left: 3px solid #F59E0B;
-    background: #fffbeb;
-    border-radius: 0 8px 8px 0;
-    margin-bottom: 12px;
-  }
-  .pub-highlight .pub-title { font-weight: 600; font-size: 0.9em; color: #1e293b; margin-bottom: 4px; }
-  .pub-highlight .pub-venue { font-size: 0.8em; color: #F59E0B; }
-  .pub-highlight .pub-authors { font-size: 0.78em; color: #64748b; }
-
-  /* ===== JOIN BOX ===== */
-  .join-box {
-    padding: 1.5em;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #fffbeb, #f0fdfa);
-    border: 1px solid #F59E0B;
-    text-align: center;
-    margin: 2em 0;
-  }
-  .join-box h3 { color: #92400e; margin-bottom: 0.5em; }
-  .join-box p { color: #475569; font-size: 0.9em; }
-  .join-box a.join-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 24px;
-    background: #F59E0B;
+    padding: 3.5rem 2rem 3rem;
+    margin-bottom: 2.8rem;
+    border-radius: var(--radius-lg);
     color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.9em;
+    background:
+      radial-gradient(circle at 84% 15%, rgba(245, 158, 11, 0.14), transparent 30%),
+      radial-gradient(circle at 10% 90%, rgba(8, 145, 178, 0.12), transparent 32%),
+      linear-gradient(135deg, #0b1120 0%, #101827 58%, #172033 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: var(--shadow-md);
   }
-  .join-box a.join-btn:hover { background: #d97706; }
 
-  /* ===== COLLABORATORS ===== */
-  .collab-logos {
+  .sparks-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 34px 34px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.65), transparent 85%);
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-logo {
+    width: min(360px, 82%);
+    margin: 0 auto 1.15rem;
+    display: block;
+    filter: drop-shadow(0 10px 22px rgba(0,0,0,0.28));
+  }
+
+  .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.38rem 0.75rem;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 999px;
+    color: #fcd34d;
+    background: rgba(245, 158, 11, 0.08);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .hero-title {
+    margin: 0;
+    color: white;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+  }
+
+  .hero-subtitle {
+    max-width: 760px;
+    margin: 1rem auto 0;
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-meta {
+    margin-top: 1.25rem;
+    color: #94a3b8;
+    font-size: 0.86rem;
+  }
+
+  .hero-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    justify-content: center;
+    gap: 0.55rem;
+    margin-top: 1.45rem;
+  }
+
+  .hero-nav a {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    color: #e2e8f0;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.04);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  .hero-nav a:hover {
+    color: white;
+    border-color: rgba(245,158,11,0.45);
+    background: rgba(245,158,11,0.10);
+    transform: translateY(-1px);
+  }
+
+  /* =========================
+     SHARED SECTION STYLING
+     ========================= */
+
+  .lab-section {
+    margin: 3.2rem 0;
+    scroll-margin-top: 90px;
+  }
+
+  .section-heading {
+    margin-bottom: 1.35rem;
+  }
+
+  .section-eyebrow {
+    color: var(--sparks-amber);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    margin-top: 0.25rem !important;
+    color: var(--text-main);
+    font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+    letter-spacing: -0.02em;
+  }
+
+  .section-rule {
+    width: 46px;
+    height: 3px;
+    margin-top: 0.7rem;
+    border-radius: 99px;
+    background: var(--sparks-amber);
+  }
+
+  .section-intro {
+    max-width: 820px;
+    margin-top: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  /* =========================
+     ABOUT
+     ========================= */
+
+  .about-panel {
+    padding: 1.7rem 1.8rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: linear-gradient(180deg, #ffffff, #fbfdff);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .about-panel p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.82;
+  }
+
+  .about-panel p + p {
+    margin-top: 0.9rem;
+  }
+
+  .about-panel strong {
+    color: var(--text-main);
+  }
+
+  /* =========================
+     RESEARCH AREAS
+     ========================= */
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .research-card {
+    position: relative;
+    min-height: 205px;
+    padding: 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: 0 2px 10px rgba(15,23,42,0.025);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+
+  .research-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(217,119,6,0.32);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .research-index {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 1em 0 2em;
-  }
-  .collab-logos span {
-    font-size: 0.82em;
-    color: #475569;
-    padding: 8px 16px;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    background: #f8fafc;
-    transition: all 0.2s ease;
-  }
-  .collab-logos span:hover {
-    border-color: #F59E0B;
+    margin-bottom: 1rem;
+    border-radius: 9px;
+    color: #92400e;
     background: #fffbeb;
+    border: 1px solid #fde68a;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
   }
 
-  /* ===== ORG CHART CONNECTOR ===== */
-  .org-connector {
-    width: 2px;
-    height: 20px;
-    background: linear-gradient(to bottom, #F59E0B, #06B6D4);
-    margin: 0 auto;
-    opacity: 0.3;
-  }
-  .org-connector.grad-to-ugrad {
-    background: linear-gradient(to bottom, #06B6D4, #8B5CF6);
+  .research-card h3 {
+    margin: 0 0 0.55rem;
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.35;
   }
 
-  /* ===== ALUMNI LIST ===== */
-  .alumni-list { list-style: none; margin: 0; padding: 0; }
-  .alumni-list li {
-    padding: 10px 14px;
+  .research-card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+
+  /* =========================
+     TEAM
+     ========================= */
+
+  .team-block + .team-block {
+    margin-top: 2.2rem;
+  }
+
+  .team-label {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.85rem;
+    color: var(--text-soft);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .team-label::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: var(--border);
+  }
+
+  .pi-card {
+    display: grid;
+    grid-template-columns: 132px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 760px;
+    padding: 1.55rem;
+    border: 1px solid #fde68a;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, #fffbeb 0%, #ffffff 72%);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .pi-photo {
+    width: 132px;
+    height: 132px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #fcd34d;
     background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-left: 3px solid #94A3B8;
-    border-radius: 0 8px 8px 0;
-    font-size: 0.85em;
-    color: #475569;
-    margin-bottom: 8px;
   }
 
-  /* ===== DARK MODE ===== */
-  html[data-theme="dark"] .area-card,
-  html[data-theme="dark"] .member-card,
-  html[data-theme="dark"] .alumni-list li,
-  html[data-theme="dark"] .collab-logos span {
-    background: #1f2430;
-    border-color: rgba(255, 255, 255, 0.08);
+  .pi-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  html[data-theme="dark"] .area-card h4,
-  html[data-theme="dark"] .member-card h4 { color: #e5e7eb; }
-  html[data-theme="dark"] .area-card p,
-  html[data-theme="dark"] .member-card .info,
-  html[data-theme="dark"] .alumni-list li,
-  html[data-theme="dark"] .collab-logos span { color: #9aa4b2; }
-  html[data-theme="dark"] .member-card .quote { color: #cbd5e1; border-top-color: rgba(255,255,255,0.08); }
-  html[data-theme="dark"] .pub-highlight { background: #251f10; }
-  html[data-theme="dark"] .pub-highlight .pub-title { color: #f1f5f9; }
-  html[data-theme="dark"] .join-box { background: linear-gradient(135deg, #251f10, #10211f); }
-  html[data-theme="dark"] .join-box h3 { color: #fcd34d; }
-  html[data-theme="dark"] .join-box p { color: #cbd5e1; }
-  html[data-theme="dark"] .pi-card { background: linear-gradient(135deg, #2a2410, #2a2008); }
-  html[data-theme="dark"] .pi-card h4 { color: #f1f5f9; }
+
+  .pi-content h3 {
+    margin: 0;
+    color: var(--text-main);
+    font-size: 1.2rem;
+  }
+
+  .pi-role {
+    margin-top: 0.25rem;
+    color: var(--sparks-amber);
+    font-size: 0.86rem;
+    font-weight: 700;
+  }
+
+  .pi-details {
+    margin-top: 0.65rem;
+    color: var(--text-muted);
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+
+  .pi-links {
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .person-card {
+    padding: 1.25rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    text-align: center;
+    transition: 0.18s ease;
+  }
+
+  .person-card:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .person-photo {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 0.85rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #f1f5f9;
+    background: #f8fafc;
+  }
+
+  .person-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .person-card h3 {
+    margin: 0;
+    color: var(--text-main);
+    font-size: 0.95rem;
+  }
+
+  .person-role {
+    margin-top: 0.25rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .grad-role {
+    color: var(--sparks-cyan);
+  }
+
+  .ugrad-role {
+    color: var(--sparks-purple);
+  }
+
+  .person-affiliation {
+    margin-top: 0.45rem;
+    color: var(--text-muted);
+    font-size: 0.77rem;
+    line-height: 1.5;
+  }
+
+  .person-focus {
+    margin-top: 0.75rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid #f1f5f9;
+    color: #64748b;
+    font-size: 0.74rem;
+    line-height: 1.5;
+  }
+
+  .alumni-row {
+    padding: 0.95rem 1rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid #94a3b8;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    background: var(--surface-soft);
+    color: #475569;
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  /* =========================
+     PUBLICATIONS
+     ========================= */
+
+  .publication-list {
+    border-top: 1px solid var(--border);
+  }
+
+  .publication-item {
+    display: grid;
+    grid-template-columns: 74px 1fr;
+    gap: 1rem;
+    padding: 1.05rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pub-year {
+    align-self: start;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.28rem 0.4rem;
+    border-radius: 7px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 0.74rem;
+    font-weight: 800;
+  }
+
+  .pub-title {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.48;
+  }
+
+  .pub-authors {
+    margin-top: 0.24rem;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .pub-venue {
+    margin-top: 0.22rem;
+    color: var(--sparks-amber);
+    font-size: 0.76rem;
+    font-weight: 700;
+  }
+
+  .section-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.84rem;
+    font-weight: 700;
+  }
+
+  /* =========================
+     FUNDING + HPC
+     ========================= */
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1.2rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface-soft);
+  }
+
+  .info-card h3 {
+    margin: 0 0 0.55rem;
+    color: var(--text-main);
+    font-size: 0.94rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.81rem;
+    line-height: 1.58;
+  }
+
+  .info-card .tag {
+    display: inline-block;
+    margin-top: 0.65rem;
+    color: var(--sparks-amber);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* =========================
+     JOIN CTA
+     ========================= */
+
+  .join-panel {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    background:
+      radial-gradient(circle at 90% 20%, rgba(245,158,11,0.14), transparent 28%),
+      linear-gradient(135deg, #0f172a, #172033);
+    color: white;
+    box-shadow: var(--shadow-md);
+  }
+
+  .join-panel h2 {
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  .join-panel p {
+    max-width: 760px;
+    margin: 0.75rem 0 0;
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .join-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .join-field {
+    padding: 0.36rem 0.6rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.045);
+    color: #e2e8f0;
+    font-size: 0.75rem;
+  }
+
+  .join-button {
+    display: inline-block;
+    margin-top: 1.15rem;
+    padding: 0.68rem 1rem;
+    border-radius: 9px;
+    background: var(--sparks-amber);
+    color: white !important;
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-decoration: none !important;
+    transition: 0.18s ease;
+  }
+
+  .join-button:hover {
+    background: #b45309;
+    transform: translateY(-1px);
+  }
+
+  /* =========================
+     CONTACT
+     ========================= */
+
+  .contact-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.3rem 1.4rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface-soft);
+  }
+
+  .contact-main {
+    color: var(--text-muted);
+    font-size: 0.83rem;
+    line-height: 1.65;
+  }
+
+  .contact-main strong {
+    color: var(--text-main);
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .contact-links a {
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  /* =========================
+     DARK MODE
+     ========================= */
+
+  html[data-theme="dark"] .sparks-page {
+    --text-main: #f1f5f9;
+    --text-muted: #a8b3c4;
+    --text-soft: #94a3b8;
+    --surface: #171d2a;
+    --surface-soft: #1d2432;
+    --border: rgba(255,255,255,0.09);
+  }
+
+  html[data-theme="dark"] .about-panel,
+  html[data-theme="dark"] .pi-card {
+    background: #171d2a;
+  }
+
+  html[data-theme="dark"] .about-panel p,
+  html[data-theme="dark"] .alumni-row {
+    color: #a8b3c4;
+  }
+
+  html[data-theme="dark"] .research-index {
+    background: rgba(245,158,11,0.10);
+    color: #fbbf24;
+    border-color: rgba(245,158,11,0.18);
+  }
+
+  html[data-theme="dark"] .person-focus,
+  html[data-theme="dark"] .publication-list,
+  html[data-theme="dark"] .publication-item {
+    border-color: rgba(255,255,255,0.08);
+  }
+
+  html[data-theme="dark"] .pub-year {
+    background: #242c3b;
+    color: #cbd5e1;
+  }
+
+  html[data-theme="dark"] .contact-links a {
+    background: #171d2a;
+    border-color: rgba(255,255,255,0.10);
+  }
+
+  /* =========================
+     RESPONSIVE
+     ========================= */
+
+  @media (max-width: 920px) {
+    .research-grid,
+    .people-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .sparks-hero {
+      padding: 2.5rem 1.15rem 2.25rem;
+      border-radius: 18px;
+    }
+
+    .research-grid,
+    .people-grid,
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pi-card {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .pi-photo {
+      margin: 0 auto;
+    }
+
+    .publication-item {
+      grid-template-columns: 56px 1fr;
+      gap: 0.75rem;
+    }
+
+    .contact-card {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-links {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .research-card,
+    .person-card,
+    .hero-nav a,
+    .join-button {
+      transition: none;
+    }
+  }
 </style>
 
-<!-- ========================================= -->
-<!-- SPARKS HEADER with BIGGER LOGO -->
-<!-- ========================================= -->
-<div class="sparks-header">
-  <div class="logo-stage">
-    <span class="orbit orbit-a"><span class="orb c-left"></span></span>
-    <span class="orbit orbit-b"><span class="orb c-right"></span></span>
-    <span class="spark-burst"></span>
-    <img src="/images/sparks_logo.svg" alt="SPARKS Lab Logo" class="spark-logo">
-  </div>
-  <h2>Scientific Prediction through AI Research, Knowledge & Simulation</h2>
-  <p>Department of Computer Science · Texas State University · San Marcos, TX</p>
-</div>
+<div class="sparks-page">
 
-## About SPARKS
+  <!-- ===================================================== -->
+  <!-- HERO -->
+  <!-- ===================================================== -->
+  <header class="sparks-hero">
+    <div class="hero-inner">
+      <div class="hero-kicker">Texas State University · Computer Science</div>
+      <img src="/images/sparks_logo.svg" alt="SPARKS Lab" class="hero-logo">
 
-The **SPARKS Lab** (**S**cientific **P**rediction through **A**I **R**esearch, **K**nowledge & **S**imulation) develops next-generation AI methods that are grounded in scientific principles. We build machine learning algorithms that don't just fit data — they respect the laws of physics, scale to real-world complexity, and provide interpretable insights for scientific discovery.
+      <h1 class="hero-title">
+        Scientific Prediction through AI Research, Knowledge &amp; Simulation
+      </h1>
 
-Our work spans **physics-informed neural networks**, **neural operators**, **generative AI for science**, and **hybrid modeling** — with applications ranging from climate modeling and turbulence to nanoscale heat conduction and metamaterial design.
+      <p class="hero-subtitle">
+        Developing physics-grounded artificial intelligence and scientific machine learning
+        methods for prediction, discovery, optimization, and engineering design.
+      </p>
 
----
-
-## Research Areas
-
-<div class="research-areas">
-  <div class="area-card">
-    <div class="emoji">🧠</div>
-    <h4>Scientific Machine Learning</h4>
-    <p>Physics-Informed Neural Networks (PINNs), DeepONets, and deep neural operators for solving complex PDEs and multiphysics problems.</p>
-  </div>
-  <div class="area-card">
-    <div class="emoji">🌍</div>
-    <h4>Climate & Earth System Modeling</h4>
-    <p>Neural operator-based bias corrections, nudging strategies for E3SM, and hybrid approaches for weather and climate prediction.</p>
-  </div>
-  <div class="area-card">
-    <div class="emoji">🌊</div>
-    <h4>Turbulence & Fluid Dynamics</h4>
-    <p>Generative models and diffusion-based neural operators for super-resolution, forecasting, and sparse reconstruction of turbulent flows.</p>
-  </div>
-  <div class="area-card">
-    <div class="emoji">🔬</div>
-    <h4>Nanoscale Heat Conduction</h4>
-    <p>Neural network methods for ultrashort-pulsed laser heating, parabolic two-temperature models, and multi-layer thin film thermal analysis.</p>
-  </div>
-  <div class="area-card">
-    <div class="emoji">⚡</div>
-    <h4>Neural Operators & Spectral Methods</h4>
-    <p>Mitigating spectral bias, high-frequency scaling, multi-fidelity operator learning for physical systems.</p>
-  </div>
-  <div class="area-card">
-    <div class="emoji">🛡️</div>
-    <h4>Engineering & Inverse Design</h4>
-    <p>MOSFET heat sink optimization, PIER routing, mechanical metamaterial characterization, and inverse design via neural operators.</p>
-  </div>
-</div>
-
----
-
-## Team
-
-<!-- ===== TIER 1: PRINCIPAL INVESTIGATOR ===== -->
-<div class="team-tier">
-  <div class="tier-label pi">PRINCIPAL INVESTIGATOR</div>
-  <div class="pi-card">
-    <div class="pi-photo">
-      <img src="/images/profile_2.png" alt="Dr. Aniruddha Bora">
-    </div>
-    <h4>Dr. Aniruddha Bora</h4>
-    <div class="role">Assistant Professor, Computer Science</div>
-    <div class="info">
-      Texas State University<br>
-      Ph.D., Louisiana Tech University<br>
-      Postdoc, Brown University <br>
-      <a href="mailto:aniruddha_bora@txstate.edu">aniruddha_bora@txstate.edu</a>
-    </div>
-  </div>
-</div>
-
-<div class="org-connector"></div>
-
-<div class="team-tier">
-  <div class="tier-label grad">GRADUATE STUDENTS</div>
-
-  <div class="member-grid">
-
-    <!-- Christopher -->
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="/images/coov_txstate.jpg" alt="Christopher M. Coovrey">
+      <div class="hero-meta">
+        Department of Computer Science · Texas State University · San Marcos, Texas
       </div>
-      <h4>Christopher M. Coovrey</h4>
-      <div class="role grad-role">Ph.D. Student</div>
-      <div class="info">
+
+      <nav class="hero-nav" aria-label="SPARKS Lab page sections">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#publications">Publications</a>
+        <a href="#funding">Funding &amp; Computing</a>
+        <a href="#join">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ===================================================== -->
+  <!-- ABOUT -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="about">
+    <div class="section-heading">
+      <div class="section-eyebrow">About the Lab</div>
+      <h2 class="section-title">AI grounded in scientific principles</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="about-panel">
+      <p>
+        The <strong>SPARKS Lab</strong> (<strong>S</strong>cientific <strong>P</strong>rediction through
+        <strong>A</strong>I <strong>R</strong>esearch, <strong>K</strong>nowledge &amp; <strong>S</strong>imulation)
+        develops next-generation AI methods for scientific and engineering systems. Our goal is to build
+        machine learning models that do more than fit data: they incorporate physical structure, scale to
+        complex systems, and provide useful representations for scientific discovery and decision-making.
+      </p>
+
+      <p>
+        Our research spans <strong>physics-informed learning</strong>, <strong>neural operators</strong>,
+        <strong>generative AI for science</strong>, and <strong>hybrid physics–ML modeling</strong>, with
+        applications in climate and Earth systems, turbulence, nanoscale heat transport, inverse design,
+        and engineering optimization.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- RESEARCH -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="research">
+    <div class="section-heading">
+      <div class="section-eyebrow">Research</div>
+      <h2 class="section-title">Research areas</h2>
+      <div class="section-rule"></div>
+      <p class="section-intro">
+        We develop computational methods at the intersection of machine learning, applied mathematics,
+        physics, and high-performance scientific computing.
+      </p>
+    </div>
+
+    <div class="research-grid">
+
+      <article class="research-card">
+        <div class="research-index">01</div>
+        <h3>Scientific Machine Learning</h3>
+        <p>
+          Physics-Informed Neural Networks (PINNs), DeepONets, and neural operators for solving
+          PDEs, inverse problems, and multiphysics systems.
+        </p>
+      </article>
+
+      <article class="research-card">
+        <div class="research-index">02</div>
+        <h3>Climate &amp; Earth System Modeling</h3>
+        <p>
+          Neural-operator bias correction, nudging strategies for E3SM, and hybrid AI–physics
+          approaches for weather and climate prediction.
+        </p>
+      </article>
+
+      <article class="research-card">
+        <div class="research-index">03</div>
+        <h3>Turbulence &amp; Fluid Dynamics</h3>
+        <p>
+          Generative and diffusion-based operator models for forecasting, super-resolution,
+          and sparse reconstruction of turbulent flow fields.
+        </p>
+      </article>
+
+      <article class="research-card">
+        <div class="research-index">04</div>
+        <h3>Nanoscale Heat Conduction</h3>
+        <p>
+          Learning-based methods for ultrashort-pulsed laser heating, two-temperature models,
+          and thermal transport in multilayer thin-film systems.
+        </p>
+      </article>
+
+      <article class="research-card">
+        <div class="research-index">05</div>
+        <h3>Neural Operators &amp; Spectral Learning</h3>
+        <p>
+          High-frequency representation, spectral-bias mitigation, multi-fidelity learning,
+          and operator learning for complex physical systems.
+        </p>
+      </article>
+
+      <article class="research-card">
+        <div class="research-index">06</div>
+        <h3>Engineering &amp; Inverse Design</h3>
+        <p>
+          Physics-informed optimization for thermal systems, risk-aware routing, mechanical
+          metamaterials, and inverse design using neural operators.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- TEAM -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="team">
+    <div class="section-heading">
+      <div class="section-eyebrow">People</div>
+      <h2 class="section-title">SPARKS Lab team</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="team-block">
+      <div class="team-label">Principal Investigator</div>
+
+      <div class="pi-card">
+        <div class="pi-photo">
+          <img src="/images/profile_2.png" alt="Dr. Aniruddha Bora">
+        </div>
+
+        <div class="pi-content">
+          <h3>Dr. Aniruddha Bora</h3>
+          <div class="pi-role">Assistant Professor of Computer Science</div>
+          <div class="pi-details">
+            Texas State University<br>
+            Ph.D., Louisiana Tech University<br>
+            Former Postdoctoral Research Associate, Brown University
+          </div>
+          <div class="pi-links">
+            <a href="mailto:aniruddha_bora@txstate.edu">Email</a>
+            &nbsp;·&nbsp;
+            <a href="https://aniruddhabora.github.io">Website</a>
+            &nbsp;·&nbsp;
+            <a href="https://scholar.google.com/citations?user=4OMm56YAAAAJ&hl=en">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="team-block">
+      <div class="team-label">Graduate Students</div>
+
+      <div class="people-grid">
+
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="/images/coov_txstate.jpg" alt="Christopher M. Coovrey">
+          </div>
+          <h3>Christopher M. Coovrey</h3>
+          <div class="person-role grad-role">Ph.D. Student</div>
+          <div class="person-affiliation">
+            Department of Computer Science<br>
+            Texas State University
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="/images/collin_txst.jpg" alt="Collin Reisman">
+          </div>
+          <h3>Collin Reisman</h3>
+          <div class="person-role grad-role">Ph.D. Student</div>
+          <div class="person-affiliation">
+            Department of Computer Science<br>
+            Texas State University
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="/images/keerth.jpg" alt="Keerthana Sunil">
+          </div>
+          <h3>Keerthana Sunil</h3>
+          <div class="person-role grad-role">Ph.D. Student</div>
+          <div class="person-affiliation">
+            Department of Computer Science<br>
+            Texas State University
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+    <div class="team-block">
+      <div class="team-label">Undergraduate Researchers</div>
+
+      <div class="people-grid">
+
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="/images/student1.jpeg" alt="Pawan Pradhan">
+          </div>
+          <h3>Pawan Pradhan</h3>
+          <div class="person-role ugrad-role">Undergraduate Researcher</div>
+          <div class="person-affiliation">
+            Mechanical Engineering<br>
+            Texas State University
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="/images/student2.png" alt="Arjun Gyawali">
+          </div>
+          <h3>Arjun Gyawali</h3>
+          <div class="person-role ugrad-role">Undergraduate Researcher</div>
+          <div class="person-affiliation">
+            Computer Science<br>
+            Texas State University
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="/images/prakriti.jpg" alt="Prakriti Gautam">
+          </div>
+          <h3>Prakriti Gautam</h3>
+          <div class="person-role ugrad-role">Undergraduate Researcher</div>
+          <div class="person-affiliation">
+            Computer Science<br>
+            Texas State University
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+    <div class="team-block">
+      <div class="team-label">Alumni &amp; Past Mentees</div>
+      <div class="alumni-row">
+        <strong>Sotos Lois</strong> — Imperial College London, 2022–2023 ·
+        Mathematical finance using PINNs and operator learning
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- PUBLICATIONS -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="publications">
+    <div class="section-heading">
+      <div class="section-eyebrow">Scholarship</div>
+      <h2 class="section-title">Selected publications</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="publication-list">
+
+      <article class="publication-item">
+        <div class="pub-year">2025</div>
+        <div>
+          <div class="pub-title">
+            Integrating Neural Operators with Diffusion Models Improves Spectral Representation in Turbulence Modeling
+          </div>
+          <div class="pub-authors">V. Oommen, A. Bora, Z. Zhang, G.E. Karniadakis</div>
+          <div class="pub-venue">Proceedings of the Royal Society A</div>
+        </div>
+      </article>
+
+      <article class="publication-item">
+        <div class="pub-year">2025</div>
+        <div>
+          <div class="pub-title">
+            Characterization and Inverse Design of Stochastic Mechanical Metamaterials Using Neural Operators
+          </div>
+          <div class="pub-authors">H. Jin, B. Zhang, Q. Cao, E. Zhang, A. Bora, et al.</div>
+          <div class="pub-venue">Advanced Materials</div>
+        </div>
+      </article>
+
+      <article class="publication-item">
+        <div class="pub-year">2025</div>
+        <div>
+          <div class="pub-title">
+            XAI4Extremes: An interpretable ML framework for understanding extreme-weather precursors
+          </div>
+          <div class="pub-authors">J. Wei, A. Bora, V. Oommen, et al.</div>
+          <div class="pub-venue">ICLR 2025 Workshop</div>
+        </div>
+      </article>
+
+      <article class="publication-item">
+        <div class="pub-year">2023</div>
+        <div>
+          <div class="pub-title">
+            Learning bias corrections for climate models using deep neural operators
+          </div>
+          <div class="pub-authors">A. Bora, K. Shukla, S. Zhang, R. Leung, G.E. Karniadakis</div>
+          <div class="pub-venue">AAAI 2023</div>
+        </div>
+      </article>
+
+      <article class="publication-item">
+        <div class="pub-year">2022</div>
+        <div>
+          <div class="pub-title">
+            Neural network method for solving nonlocal two-temperature nanoscale heat conduction in gold films
+          </div>
+          <div class="pub-authors">A. Bora, W. Dai, J.P. Wilson, J.C. Boyt, S.L. Sobolev</div>
+          <div class="pub-venue">International Journal of Heat and Mass Transfer</div>
+        </div>
+      </article>
+
+    </div>
+
+    <a class="section-link" href="/publications/">View all publications →</a>
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- FUNDING + HPC -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="funding">
+    <div class="section-heading">
+      <div class="section-eyebrow">Support &amp; Infrastructure</div>
+      <h2 class="section-title">Funding and computing resources</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>PIER: Physics-Informed, Energy-efficient, Risk-aware Routing</h3>
+        <p>
+          Texas State University research support for physics-informed and data-driven
+          methods for intelligent routing and decision-making.
+        </p>
+        <div class="tag">$12,000 · 2026–Present</div>
+      </div>
+
+      <div class="info-card">
+        <h3>ALCF Director's Discretionary Allocation</h3>
+        <p>
+          High-performance computing allocations supporting physics-informed generative AI
+          and extreme-weather modeling with neural operator methods.
+        </p>
+        <div class="tag">Argonne Leadership Computing Facility</div>
+      </div>
+
+      <div class="info-card">
+        <h3>MURI Program (ONR)</h3>
+        <p>
+          Machine-learning methods for phase-change heat-transfer modeling and design,
+          with contributions developed during work at Brown University.
+        </p>
+        <div class="tag">Research Contributor</div>
+      </div>
+
+      <div class="info-card">
+        <h3>Leadership-Class Computing</h3>
+        <p>
+          SPARKS research uses ALCF Polaris and Aurora, along with Brown University's
+          OSCAR cluster, for large-scale scientific machine learning experiments.
+        </p>
+        <div class="tag">Polaris · Aurora · OSCAR</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- JOIN -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="join">
+    <div class="join-panel">
+      <div class="section-eyebrow">Opportunities</div>
+      <h2>Join the SPARKS Lab</h2>
+
+      <p>
+        We welcome motivated graduate and undergraduate researchers interested in developing
+        rigorous machine-learning methods for scientific and engineering systems. Students with
+        backgrounds in computer science, applied mathematics, physics, and engineering are encouraged
+        to get in touch.
+      </p>
+
+      <div class="join-fields">
+        <span class="join-field">Scientific Machine Learning</span>
+        <span class="join-field">Physics-Informed AI</span>
+        <span class="join-field">Neural Operators</span>
+        <span class="join-field">Generative AI for Science</span>
+        <span class="join-field">Computational Modeling</span>
+      </div>
+
+      <a class="join-button" href="mailto:aniruddha_bora@txstate.edu">
+        Contact Dr. Bora
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- CONTACT -->
+  <!-- ===================================================== -->
+  <section class="lab-section" id="contact">
+    <div class="section-heading">
+      <div class="section-eyebrow">Contact</div>
+      <h2 class="section-title">Get in touch</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-main">
+        <strong>Dr. Aniruddha Bora</strong><br>
         Department of Computer Science<br>
-        Texas State University
+        310D COMAL, Texas State University<br>
+        San Marcos, TX 78666
       </div>
-      <div class="quote">
-        "I'm a stochastic gardener, there are no perfect rows nor are there mistakes, only experiments."
-      </div>
-    </div>
 
-    <!-- Collin -->
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="/images/collin_txst.jpg" alt="Collin Reisman">
-      </div>
-      <h4>Collin Reisman</h4>
-      <div class="role grad-role">Ph.D. Student</div>
-      <div class="info">
-        Department of Computer Science<br>
-        Texas State University
-      </div>
-      <div class="quote">
-        "If you believe in something, don't give up on it until you understand why that belief is wrong — Geoffrey Everest Hinton"
+      <div class="contact-links">
+        <a href="mailto:aniruddha_bora@txstate.edu">Email</a>
+        <a href="https://aniruddhabora.github.io">Website</a>
+        <a href="https://www.linkedin.com/in/aniruddha-bora-49b73a80/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=4OMm56YAAAAJ&hl=en">Google Scholar</a>
       </div>
     </div>
+  </section>
 
-    <!-- Keerthana -->
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="/images/keerth.jpg" alt="Keerthana Sunil">
-      </div>
-      <h4>Keerthana Sunil</h4>
-      <div class="role grad-role">Ph.D. Student</div>
-      <div class="info">
-        Department of Computer Science<br>
-        Texas State University
-      </div>
-      <div class="quote">
-        "In continuous pursuit of the global minimum"
-      </div>
-    </div>
-
-<div class="org-connector grad-to-ugrad"></div>
-
-<!-- ===== TIER 3: UNDERGRADUATE STUDENTS ===== -->
-<div class="team-tier">
-  <div class="tier-label ugrad">UNDERGRADUATE RESEARCHERS</div>
-  <div class="member-grid">
-
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="/images/student1.jpeg" alt="Pawan Pradhan">
-      </div>
-      <h4>Pawan Pradhan</h4>
-      <div class="role ugrad-role">Undergraduate Researcher</div>
-      <div class="info">Mechanical engineering, Texas State University</div>
-      <div class="quote">"I transform ideas into real-world systems."</div>
-    </div>
-
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="/images/student2.png" alt="Arjun Gyawali">
-      </div>
-      <h4>Arjun Gyawali</h4>
-      <div class="role ugrad-role">Undergraduate Researcher</div>
-      <div class="info">Computer Science, Texas State University</div>
-      <div class="quote">"I don't just call APIs and tune hyperparameters, I trace the math down to the gradient, because black boxes don't teach you anything."</div>
-    </div>
-
-     <div class="member-card">
-      <div class="member-photo">
-        <img src="/images/prakriti.jpg" alt="Prakriti Gautam">
-      </div>
-      <h4>Prakriti Gautam</h4>
-      <div class="role ugrad-role">Undergraduate Researcher</div>
-      <div class="info">Computer Science, Texas State University</div>
-      <div class="quote">"Every gradient is a whisper from the data — I just learned to listen."</div>
-    </div>
-
-  </div>
 </div>
-
-<div class="org-connector grad-to-ugrad"></div>
-
-<!-- ===== TIER 4: ALUMNI / PAST MENTEES ===== -->
-<div class="team-tier">
-  <div class="tier-label alumni">ALUMNI & PAST MENTEES</div>
-  <ul class="alumni-list">
-    <li><strong>Sotos Lois</strong> — Imperial College London, 2022–2023 · Mathematical finance using PINNs and operator learning</li>
-  </ul>
-</div>
-
----
-
-## Selected Publications
-
-<div class="pub-highlight">
-  <div class="pub-title">Learning bias corrections for climate models using deep neural operators</div>
-  <div class="pub-authors">A. Bora, K. Shukla, S. Zhang, R. Leung, G.E. Karniadakis</div>
-  <div class="pub-venue">AAAI 2023</div>
-</div>
-
-<div class="pub-highlight">
-  <div class="pub-title">Integrating Neural Operators with Diffusion Models Improves Spectral Representation in Turbulence Modeling</div>
-  <div class="pub-authors">V. Oommen, A. Bora, Z. Zhang, G.E. Karniadakis</div>
-  <div class="pub-venue">Proceedings of the Royal Society A, 2025</div>
-</div>
-
-<div class="pub-highlight">
-  <div class="pub-title">Characterization and Inverse Design of Stochastic Mechanical Metamaterials Using Neural Operators</div>
-  <div class="pub-authors">H. Jin, B. Zhang, Q. Cao, E. Zhang, A. Bora, et al.</div>
-  <div class="pub-venue">Advanced Materials, 2025</div>
-</div>
-
-<div class="pub-highlight">
-  <div class="pub-title">Neural network method for solving nonlocal two-temperature nanoscale heat conduction in gold films</div>
-  <div class="pub-authors">A. Bora, W. Dai, J.P. Wilson, J.C. Boyt, S.L. Sobolev</div>
-  <div class="pub-venue">International Journal of Heat and Mass Transfer, 2022</div>
-</div>
-
-<div class="pub-highlight">
-  <div class="pub-title">XAI4Extremes: An interpretable ML framework for understanding extreme-weather precursors</div>
-  <div class="pub-authors">J. Wei, A. Bora, V. Oommen, et al.</div>
-  <div class="pub-venue">ICLR 2025 Workshop</div>
-</div>
-
-👉 **[See all publications →](/publications/)**
-
----
-
-
-## Grants & Funding
-
-* **PIER: Physics-Informed, Energy-efficient, Risk-aware Routing** — Texas State University, $12,000 (2026–Present)
-* **ALCF Director's Discretionary Allocation** — Physics-Informed Generative AI (Argonne)
-* **ALCF Director's Discretionary Allocation** — Extreme Weather via Neural Operator Approximation (Argonne)
-* **MURI Program (ONR)** — ML Methods for Phase Change Heat Transfer Modeling and Design (Brown, contributor)
-
----
-
-## HPC Resources
-
-The SPARKS Lab has access to world-class computing infrastructure:
-
-* **ALCF Polaris** — HPE Cray EX (AMD EPYC + NVIDIA A100)
-* **ALCF Aurora** — HPE Cray EX (Intel Sapphire Rapids + Intel Data Center GPU Max)
-* **OSCAR** — Brown University HPC Cluster
-
----
-
-<div class="join-box">
-  <h3>🔥 Join the SPARKS Lab!</h3>
-  <p>I am recruiting <strong>one funded Ph.D. student</strong> for Fall 2026 and welcome motivated Master's and undergraduate researchers.<br>
-  Looking for students with backgrounds in <strong>CS, Applied Math, Physics, or Engineering</strong> interested in:</p>
-  <p><strong>Machine learning for physical systems · Scientific & interpretable AI · Computational modeling using AI</strong></p>
-  <a class="join-btn" href="mailto:aniruddha_bora@txstate.edu">📧 Apply Now — aniruddha_bora@txstate.edu</a>
-</div>
-
----
-
-## Contact
-
-**Dr. Aniruddha Bora**  
-Department of Computer Science  
-310D COMAL, Texas State University  
-San Marcos, TX 78666  
-
-📧 [aniruddha_bora@txstate.edu](mailto:aniruddha_bora@txstate.edu)  
-🌐 [aniruddhabora.github.io](https://aniruddhabora.github.io)  
-🔗 [LinkedIn](https://www.linkedin.com/in/aniruddha-bora-49b73a80/)  
-📚 [Google Scholar](https://scholar.google.com/citations?user=4OMm56YAAAAJ&hl=en)
