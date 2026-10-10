@@ -1,0 +1,67 @@
+{
+  "appointments": [
+    ["Aug. 2025–present", "Assistant Professor, Department of Computer Science", "Texas State University · San Marcos, Texas"],
+    ["Summer 2026", "J. Tinsley Oden Faculty Fellow", "Oden Institute for Computational Engineering and Sciences · University of Texas at Austin"],
+    ["2022–2025", "Postdoctoral Research Associate, Department of Applied Mathematics", "Brown University · Providence, Rhode Island"]
+  ],
+  "education": [
+    ["Nov. 2021", "Ph.D., Computational Analysis & Modelling", "Louisiana Tech University · Ruston, Louisiana. Dissertation: Gradient Preserved Method and Neural Network Method for Solving Heat Conduction Equation with Variable Thermal Conductivity in Double Layered Structures. Advisor: Prof. Weizhong Dai."],
+    ["May 2015", "M.S., Applied Mathematics", "South Asian University · New Delhi, India"],
+    ["May 2013", "B.Sc., Mathematics", "Cotton College · Guwahati, Assam, India"]
+  ],
+  "mentoring": [
+    ["2025–present", "Independent faculty research and doctoral advising", "Lead funded projects and interdisciplinary collaborations in scientific machine learning, neural operators, physics-grounded modeling, and reinforcement learning."],
+    ["Primary advisor", "Christopher M. Coovrey", "Physics-Aware Latent Scientific Machine Learning."],
+    ["Primary advisor", "Collin Reisman", "DOE Earth-System AI and Quantum Computing."],
+    ["Primary advisor", "Keerthana Sunil", "Uncertainty-Aware Agentic Reinforcement Learning for Scientific Systems."],
+    ["Undergraduate", "Research mentorship", "Scientific machine learning and interdisciplinary AI projects."],
+    ["June 2022–July 2023", "Sotos Lois · Imperial College London", "Mentored at Brown University on mathematical foundations of scientific machine learning and physics-informed/operator-learning approaches to mathematical finance."],
+    ["Spring 2023", "Applied Mathematics Directed Reading Program", "Mentor · Brown University"]
+  ],
+  "funding": [
+    ["Externally funded research", [["Co-PI; TXST subaward PI", "DOE Genesis, Phase I", "Drift-Aware Initialization of Coupled Earth System Models for Scalable Subseasonal-to-Seasonal Prediction Using Agentic AI. Prime institution: Pacific Northwest National Laboratory. Total collaborative funding: $750,000; Texas State subaward: $110,000."]]],
+    ["Institutional & innovation funding", [["PI", "BobCatalyst HealthTech Ignition Grant · Noema Laser", "$25,000"], ["PI", "BobCatalyst Proof of Concept Grant · Trashformer", "$22,450"], ["PI · 2026", "BobCatalyst Innovation Accelerator Program", "BIAP Award · $5,000"], ["PI · Jan. 2026–present", "PIER: Physics-Informed, Energy-efficient, Risk-aware Routing", "Texas State University · $12,000"]]],
+    ["Computing allocations · non-cash", [["PI", "Physics-Informed Generative AI", "ALCF Director’s Discretionary Allocation. Estimated commercial-cloud-equivalent value: $190,000; non-cash computational resources."], ["Co-PI · 2022", "Quantification of extreme weather based on neural operator approximation", "ALCF Director’s Discretionary Allocation"]]],
+    ["Collaborative proposal contributions", [["Contributor · 2024", "Machine Learning Methods for Phase Change Heat Transfer Modeling and Design", "Proposal development at Brown University. Multidisciplinary University Research Initiative (MURI), Office of Naval Research. Collaborative proposal amount: $7.3 million; role: proposal development contributor."]]]
+  ],
+  "awards": [
+    ["Summer 2026", "J. Tinsley Oden Faculty Fellow", "Oden Institute · University of Texas at Austin"],
+    ["2026", "Winner · BioNTX Tech Transfer Showcase", "iC³ Life Science & Healthcare Innovation Summit"],
+    ["2026", "Popular Choice Award · Noema-Laser", "Nucleate Texas Demo Day"],
+    ["Apr. 11, 2026", "Second Place · Bobcat Innovation Challenge", "Pitch competition · $1,500"],
+    ["2026", "Nucleate Activator Finalist", "2026 cohort"],
+    ["2020–2021", "Harry J. Gaston, Jr. Memorial Scholarship in Engineering", "Louisiana Tech University"],
+    ["2018–2020", "College of Engineering and Science Scholarship", "Louisiana Tech University · 2018–2019 and 2019–2020"],
+    ["2018–2019", "Teaching Assistant of the Year", "Louisiana Tech University"],
+    ["2017–2018", "Mercedes-Benz Endowed Scholarship", "Louisiana Tech University"],
+    ["2013–2014", "Highest Cumulative Grade Point Average", "South Asian University"],
+    ["2010", "3rd Place · South Asian Karate Championship", "Bangalore · retained from the original website"]
+  ],
+  "ip": [
+    ["Filed Sept. 22, 2026", "NoemaLaser Digital-twin guided, constraint-safe laser", "Provisional patent application · Application No. 64/159,789 · Patent pending"],
+    ["Filed Apr. 28, 2026", "Hierarchical Multi-Agent Reinforcement Learning for Scalable Adaptive Traffic Signal Control", "Provisional patent application"],
+    ["Filed Mar. 10, 2026", "Physics-informed offline reinforcement learning eliminates catastrophic fuel waste in maritime routing", "Provisional patent application · Application No. 63/996,145 · Patent pending"],
+    ["Patent pending", "Reinforcement Learning-Based Adaptive Collection Scheduling System for IoT-Enabled Waste Bins", "Application No. 64/033,319"]
+  ],
+  "service": [
+    ["Oct. 30–Nov. 1, 2026", "Co-organizer · SIAM Texas–Louisiana Sectional Meeting", "Minisymposium · Southern Methodist University, Dallas, Texas · Forthcoming"],
+    ["Feb. 22–26, 2027", "Co-organizer · SIAM CSE27", "Minisymposium · SIAM Conference on Computational Science and Engineering, Pittsburgh, Pennsylvania · Forthcoming"],
+    ["Peer review", "Journal reviewer", "Nature Machine Intelligence; Journal of Computational Physics; Engineering Applications of Artificial Intelligence; Neural Computation; International Journal of Applied Mechanics and Engineering; Neurocomputing."],
+    ["Oct. 2023", "University service · Brown University", "Reviewer, SPRINT UTRA Scholarship Applications"]
+  ],
+  "teaching": [
+    ["Fall 2025 & Fall 2026", "CS 5325 · Reinforcement Learning", "Instructor of Record · Texas State University"],
+    ["Spring 2026", "CS 4379G · Data Analysis & Visualization with Python", "Instructor of Record · Texas State University"],
+    ["2022–2025", "Deep Learning for Scientists & Engineers", "Teaching Assistant · Brown University. Prepared course materials and analyzed optimization methods and mathematical formulations."],
+    ["Fall 2021", "PHYS 209", "Louisiana Tech University. Delivered instruction to 64 students, held office hours, and administered assessments."],
+    ["Sept. 2016–Aug. 2021", "PHYS 261/262", "Louisiana Tech University. Led weekly computing laboratories and office hours; developed instructional videos for remote laboratory instruction."]
+  ],
+  "skills": [
+    ["Programming & ML", "Scientific programming and machine learning", "Python, JAX, PyTorch, Fortran, FEniCS, MATLAB, Octave; R, SAS."],
+    ["HPC", "High-performance computing", "Brown OSCAR; ALCF Theta, Polaris, Aurora; Slurm, Cobalt."]
+  ],
+  "training": [
+    ["2022", "Argonne Training Program on Extreme-Scale Computing", "ATPESC"],
+    ["Sept.–Dec. 2022", "Sheridan Teaching Seminar · Reflective Teaching", "Certificate I · Brown University"]
+  ]
+}

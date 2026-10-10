@@ -1,0 +1,528 @@
+{
+  "publications": [
+    {
+      "title": "Characterization and Inverse Design of Stochastic Mechanical Metamaterials Using Neural Operators",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2025-stochastic-metamaterials-neural-operators",
+      "date": "2025-04-21",
+      "venue": "Advanced Materials",
+      "paperurl": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adma.202420063",
+      "body": "",
+      "source_file": "ADM.md",
+      "authors": "Hanxun Jin, Boyu Zhang, Qianying Cao, Enrui Zhang, Aniruddha Bora, Sridhar Krishnaswamy, George Em Karniadakis, and Horacio D. Espinosa"
+    },
+    {
+      "title": "XAI4Extremes: An explainable AI framework for understanding extreme-weather precursors",
+      "collection": "publications",
+      "category": "conferences",
+      "date": "2025-03-03",
+      "permalink": "/publication/2025-xai4extremes-ai4x",
+      "venue": "AI4X 2025 International Conference",
+      "paperurl": "https://openreview.net/pdf?id=QsNZDBKwf7",
+      "body": "",
+      "source_file": "AI4X.md"
+    },
+    {
+      "title": "An Artificial Neural Network Method for Simulation of Wave Propagation Based on the Rosenau-KdV-RLW Equation on Unbounded Domain.",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2025-rosenau-kdv-rlw-soliton",
+      "date": "2025-03-25",
+      "venue": "Mathematics, 13(7), 1036",
+      "paperurl": "https://doi.org/10.3390/math13071036",
+      "body": "",
+      "source_file": "ANN_2.md",
+      "authors": "Laurence Finch, Weizhong Dai, and Aniruddha Bora"
+    },
+    {
+      "title": "A New Artificial Neural Network Method for Solving Schrödinger Equations on Unbounded Domains",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2022-schrodinger-unbounded-domains",
+      "date": "2022-01-11",
+      "venue": "Communications in Computational Physics, 32, 1039–1060",
+      "paperurl": "https://doi.org/10.4208/cicp.OA-2022-0135",
+      "body": "",
+      "source_file": "ANN_2022.md",
+      "authors": "Joshua P. Wilson, Weizhong Dai, Aniruddha Bora, and Jacob C. Boyt"
+    },
+    {
+      "title": "Gradient preserved method for solving heat conduction equation with variable coefficients in double layers",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2020-gradient-preserved-double-layers",
+      "date": "2020-10-01",
+      "venue": "Applied Mathematics and Computation, 386, 125516",
+      "paperurl": "https://doi.org/10.1016/j.amc.2020.125516",
+      "body": "",
+      "source_file": "GPM_2020.md",
+      "authors": "Aniruddha Bora and Weizhong Dai"
+    },
+    {
+      "title": "Mitigating spectral bias in neural operators via high-frequency scaling for physical systems",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2025-spectral-bias-neural-operators",
+      "date": "2025-03-17",
+      "venue": "Neural Networks",
+      "paperurl": "https://doi.org/10.1016/j.neunet.2025.108027",
+      "body": "",
+      "source_file": "HFS.md",
+      "authors": "Siavash Khodakarami, Vivek Oommen, Aniruddha Bora, and George Em Karniadakis"
+    },
+    {
+      "title": "HeatEnergyDecay: Lean 4 proof of energy decay for linear heat-type flows",
+      "collection": "publications",
+      "category": "software",
+      "permalink": "/publication/2026-heatenergydecay-lean4",
+      "date": "2026-01-24",
+      "venue": "Zenodo",
+      "paperurl": "https://doi.org/10.5281/zenodo.18362473",
+      "body": "",
+      "source_file": "Heat_Lean4.md",
+      "authors": "Aniruddha Bora"
+    },
+    {
+      "title": "Inception UNet (IUNet) and Multi-scale Multi-branch (M&M) UNet Plug-In Neural Operators for Online Bias Correction in E3SM.",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2025-retrofitting-earth-system-models",
+      "date": "2026",
+      "venue": "Journal of Computational Physics",
+      "paperurl": "https://doi.org/10.48550/arXiv.2512.03309",
+      "body": "",
+      "source_file": "MM.md",
+      "authors": "Aniruddha Bora, Shixuan Zhang, Khemraj Shukla, Ruby Leung, and George Em Karniadakis",
+      "link_label": "Earlier preprint",
+      "status": "Journal article · 2026; link to earlier preprint"
+    },
+    {
+      "title": "Integrating neural operators with diffusion models improves spectral representation in turbulence modeling",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2025-neural-operators-diffusion-turbulence",
+      "date": "2025-12-03",
+      "venue": "Proceedings of the Royal Society A",
+      "paperurl": "https://royalsocietypublishing.org/doi/10.1098/rspa.2024.0819",
+      "body": "",
+      "source_file": "NO_DM.md",
+      "authors": "Vivek Oommen, Aniruddha Bora, Zhen Zhang, and George Em Karniadakis"
+    },
+    {
+      "title": "Neural network method for solving nonlocal two-temperature nanoscale heat conduction in gold films exposed to ultrashort-pulsed lasers",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2022-nonlocal-two-temperature-gold-films",
+      "date": "2022-03-19",
+      "venue": "International Journal of Heat and Mass Transfer, 190, 122791",
+      "paperurl": "https://doi.org/10.1016/j.ijheatmasstransfer.2022.122791",
+      "body": "",
+      "source_file": "NTTM_2022.md",
+      "authors": "Aniruddha Bora, Weizhong Dai, Joshua P. Wilson, Jacob C. Boyt, and Sergey L. Sobolev"
+    },
+    {
+      "title": "A physics-informed neural network method for thermal analysis in laser-irradiated 3D skin tissues with embedded vasculature, tumor and gold nanorods.",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2025-pinn-laser-skin-tissue",
+      "date": "2025-01-05",
+      "venue": "International Journal of Heat and Mass Transfer, 245, 126980",
+      "paperurl": "https://doi.org/10.1016/j.ijheatmasstransfer.2025.126980",
+      "body": "",
+      "source_file": "PN_Sk.md",
+      "authors": "Farnaz Rezaei, Weizhong Dai, Shayan Davani, and Aniruddha Bora"
+    },
+    {
+      "title": "Neural Network Method for Solving Parabolic Two-Temperature Microscale Heat Conduction in Double-Layered Thin Films Exposed to Ultrashort-Pulsed Lasers",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2021-parabolic-two-temperature-thin-films",
+      "date": "2021-07-11",
+      "venue": "International Journal of Heat and Mass Transfer, 178, 121616",
+      "paperurl": "https://doi.org/10.1016/j.ijheatmasstransfer.2021.121616",
+      "body": "",
+      "source_file": "PTTM_2021.md",
+      "authors": "Aniruddha Bora, Weizhong Dai, Joshua P. Wilson, and Jacob C. Boyt"
+    },
+    {
+      "title": "Learning Turbulent Flows with Generative Models: Super-resolution, Forecasting, and Sparse Flow Reconstruction",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2026-turbulent-flows-generative-models",
+      "date": "2026-03-09",
+      "venue": "Nature Communications",
+      "paperurl": "https://doi.org/10.1038/s41467-026-70145-4",
+      "body": "",
+      "source_file": "TF.md",
+      "authors": "Vivek Oommen, Siavash Khodakarami, Aniruddha Bora, Zicheng Wang, and George Em Karniadakis"
+    },
+    {
+      "title": "TransformerG2G: Learning temporal graph embeddings with long-range historical information.",
+      "collection": "publications",
+      "category": "manuscripts",
+      "permalink": "/publication/2023-transformerg2g",
+      "date": "2024",
+      "venue": "Neural Networks, 172, 106086",
+      "paperurl": "https://www.sciencedirect.com/science/article/abs/pii/S0893608023007475",
+      "body": "",
+      "source_file": "TG2G.md",
+      "authors": "Alan John Varghese, Aniruddha Bora, Mengjia Xu, and George Em Karniadakis"
+    },
+    {
+      "title": "XAI4Climate: Attributing the role of climate change on extreme-weather precursors via interpretable machine learning.",
+      "collection": "publications",
+      "category": "conferences",
+      "date": "2025-03-11",
+      "permalink": "/publication/2025-xai4extremes-iclr",
+      "venue": "Tackling Climate Change with Machine Learning, ICLR Workshop",
+      "paperurl": "https://arxiv.org/abs/2503.08163",
+      "body": "",
+      "source_file": "XAIE.md",
+      "authors": "Jiawen Wei, Aniruddha Bora, Vivek Oommen, Chenyu Dong, Juntao Yang, George Em Karniadakis, and Gianmarco Mengaldo"
+    },
+    {
+      "title": "Learning bias corrections for climate models using deep neural operators",
+      "collection": "publications",
+      "category": "conferences",
+      "date": "2023-02-07",
+      "permalink": "/publication/2023-bias-corrections-climate-neural-operators",
+      "venue": "AAAI Spring Symposium Series",
+      "paperurl": "https://arxiv.org/pdf/2302.03173",
+      "body": "",
+      "source_file": "aaai.md",
+      "authors": "Aniruddha Bora, Khemraj Shukla, Shixuan Zhang, Ruby Leung, and George Em Karniadakis"
+    },
+    {
+      "title": "Physics-Informed Deep Neural Operator Networks",
+      "collection": "publications",
+      "category": "books",
+      "permalink": "/publication/2023-physics-informed-deep-neural-operators",
+      "date": "2023-04-11",
+      "venue": "Machine Learning in Modeling and Simulation: Methods and Applications, pp. 219–254, Springer",
+      "paperurl": "https://link.springer.com/chapter/10.1007/978-3-031-36644-4_6",
+      "body": "",
+      "source_file": "book_1.md",
+      "authors": "Somdatta Goswami, Aniruddha Bora, Yue Yu, and George Em Karniadakis"
+    },
+    {
+      "source_file": "GMD_2026.md",
+      "title": "Improved nudging strategy for constraining humidity and temperature fields in the E3SM Atmosphere Model.",
+      "venue": "Geoscientific Model Development",
+      "category": "manuscripts",
+      "authors": "Shixuan Zhang, Ruby Leung, Bryce Harrop, Aniruddha Bora, Khemraj Shukla, and George Em Karniadakis",
+      "paperurl": "https://doi.org/10.5194/gmd-19-1937-2026",
+      "status": "",
+      "date": "2026",
+      "display_year": "2026",
+      "permalink": "/publication/gmd-2026",
+      "body": "",
+      "link_label": "Read publication"
+    },
+    {
+      "source_file": "process_thermal.md",
+      "title": "Process-informed forecasting of complex thermal dynamics in pharmaceutical manufacturing.",
+      "venue": "Under review at Neural Networks",
+      "category": "submitted",
+      "authors": "Ramona Rubini, Siavash Khodakarami, Aniruddha Bora, George Em Karniadakis, and Michele Dassisti",
+      "paperurl": "",
+      "status": "Under review",
+      "date": "2026",
+      "display_year": "2026",
+      "permalink": "/publication/process-thermal",
+      "body": "",
+      "link_label": "Read publication"
+    },
+    {
+      "source_file": "known_physics.md",
+      "title": "When Known Physics Helps Neural PDE Models: Residual Constraints Out-Regularize Generic Priors for Nonlinear Dynamics.",
+      "venue": "Submitted to ICLR 2027",
+      "category": "submitted",
+      "authors": "Zahra Farazpay and Aniruddha Bora",
+      "paperurl": "https://arxiv.org/pdf/2609.34012v1",
+      "status": "Submitted · preprint",
+      "date": "2026",
+      "display_year": "2026",
+      "permalink": "/publication/known-physics",
+      "body": "",
+      "link_label": "Read preprint"
+    },
+    {
+      "source_file": "PIER.md",
+      "title": "Physics-informed offline reinforcement learning eliminates catastrophic fuel waste in maritime routing.",
+      "venue": "Submitted to Scientific Reports",
+      "category": "submitted",
+      "authors": "Aniruddha Bora, Julie Chalfant, and Chryssostomos Chryssostomidis",
+      "paperurl": "https://arxiv.org/abs/2603.17319",
+      "status": "Submitted · preprint",
+      "date": "2026",
+      "display_year": "2026",
+      "permalink": "/publication/pier",
+      "body": "",
+      "link_label": "Read preprint"
+    },
+    {
+      "source_file": "MOSFET.md",
+      "title": "Enhancing Heat Sink Efficiency in MOSFETs using Physics-Informed Neural Networks: A Systematic Study on Coolant Velocity Estimation.",
+      "venue": "Submitted to International Journal of Heat and Mass Transfer",
+      "category": "submitted",
+      "authors": "Aniruddha Bora, Isabel K. Alvarez, Julie Chalfant, and Chryssostomos Chryssostomidis",
+      "paperurl": "https://doi.org/10.48550/arXiv.2602.20177",
+      "status": "Submitted · preprint",
+      "date": "2026",
+      "display_year": "2026",
+      "permalink": "/publication/mosfet",
+      "body": "",
+      "link_label": "Read preprint"
+    },
+    {
+      "source_file": "phase_lag.md",
+      "title": "Artificial Neural Network Method for Solving Phase Lagging Heat Transport Equation.",
+      "venue": "Manuscript in preparation",
+      "category": "submitted",
+      "authors": "Aniruddha Bora and Weizhong Dai",
+      "paperurl": "",
+      "status": "In preparation",
+      "date": "2026",
+      "display_year": "In prep.",
+      "permalink": "/publication/phase-lag",
+      "body": "",
+      "link_label": "Read publication"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Neural Network-Based Modeling of Ultrafast Laser-Induced Heat Transfer in Thin Films",
+      "excerpt": "In this project, I developed an artificial neural network (ANN) framework to simulate ultrafast heat conduction in double-layered metallic thin films subjected to ultrashort-pulsed laser heating. Traditional approaches rely on solving the parabolic two-temperature model (TTM), which captures the coupled dynamics between electron and lattice temperatures at micro/nanoscale time scales. Our ANN-based method offers a data-driven alternative capable of approximating the TTM solution with strong theoretical convergence guarantees. I contributed to the design and implementation of the ANN architecture and helped evaluate its performance against analytical solutions. The model was used to accurately predict the thermal responses in a gold-on-chromium thin film system under femtosecond laser excitation, demonstrating the potential of physics-informed ML for nanoscale thermal analysis in advanced materials and laser processing applications.<br/><img src='/images/PTTM.png'>",
+      "body": "![Electron Temperature Evolution](/images/E1.gif)\n*Electron temperature dynamics in the gold-chromium thin film under ultrashort laser excitation.*\n\n<br>\n\n![Lattice Temperature Evolution](/images/L1.gif)\n*Lattice temperature response modeled via ANN-based solution of the two-temperature equation.*\n\ncollection: portfolio",
+      "source_file": "port_2.md"
+    },
+    {
+      "title": "Enhancing Neural Operator Surrogates with Diffusion Models for High-Frequency Turbulence",
+      "excerpt": "In this colaborative project, we addressed a key limitation of neural operators in modeling turbulent flow: their inability to capture fine-scale, high-frequency structures. While neural operators such as Fourier Neural Operators (FNO) and DeepONets offer scalable and efficient surrogate modeling, their outputs tend to be overly smooth, failing to reproduce the rich spectral content of turbulence. To overcome this, we developed a hybrid framework where generative diffusion models are conditioned on neural operator predictions. This enables the diffusion model to restore high-frequency components lost during surrogate approximation. I contributed to the development of the hybrid architecture and led the validation across diverse datasets, including high Reynolds number jet flow simulations and experimental Schlieren velocimetry. Our method achieves markedly improved energy spectrum alignment and enables temporally stable autoregressive rollouts. Spectral analysis via Proper Orthogonal Decomposition (POD) further confirms enhanced fidelity in both space and time. This framework offers a generalizable approach for physics-informed generative enhancement, applicable to scientific systems requiring microstructural resolution. <br/><img src='/images/NO_DM.png'>",
+      "body": "collection: portfolio",
+      "source_file": "port_3.md"
+    },
+    {
+      "title": "Retrofitting Earth System Models with Cadence Limited Neural Operator Updates",
+      "excerpt": "Coarse resolution, imperfect parameterizations, and uncertain initial states and forcings limit Earth-system model (ESM) predictions. Traditional bias correction via data assimilation improves constrained simulations but offers limited benefit once models run freely. In this project I introduce an operator-learning framework that maps instantaneous model states to bias-correction tendencies and applies them online during integration. Building on a U-Net backbone, I developed two operator architectures Inception U-Net (IUNet) and a multi-scale network (M&M) that combine diverse upsampling and receptive fields to capture multiscale nonlinear features under Energy Exascale Earth System Model (E3SM) runtime constraints. Trained on two years E3SM simulations nudged toward ERA5 reanalysis, the operators generalize across height levels and seasons. Both architectures outperform standard U-Net baselines in offline tests, indicating that functional richness rather than parameter count drives performance. In online hybrid E3SM runs, M&M delivers the most consistent bias reductions across variables and vertical levels. The ML-augmented configurations remain stable and computationally feasible in multi-year simulations, providing a practical pathway for scalable hybrid modeling. Our framework emphasizes long-term stability, portability, and cadence-limited updates, demonstrating the utility of expressive ML operators for learning structured, cross-scale relationships and retrofitting legacy ESMs. <br/><img src='/images/main_fig.png'>",
+      "body": "collection: portfolio",
+      "source_file": "port_4.md"
+    },
+    {
+      "title": "Data-Efficient Inverse Design of Architected Metamaterials using Neural Operators",
+      "excerpt": "In this collaborative project, we developed a scientific machine learning framework to enable the inverse design of micro-architected metamaterials from sparse, high-fidelity experimental data. Traditional design methods for such materials often rely on dense simulations or costly lab experiments, particularly challenging for nonlinear and stochastic microstructures. Our approach leverages deep neural operators—including DeepONet and its variants—to directly learn the complex mappings between microstructural features and their mechanical responses. I contributed to the implementation and evaluation of the neural operator models and supported the comparative analysis between standard neural networks and operator-based architectures. Our results on spinodal microstructures fabricated via two-photon lithography demonstrated predictive accuracy within 5–10%, highlighting the method’s viability under data-constrained conditions. This work illustrates the power of integrating advanced ML with nanoscale experimentation to accelerate the design of next-generation mechanical metamaterials.\n<br/><img src='/images/Meta.jpg'>",
+      "collection": "portfolio",
+      "body": "",
+      "source_file": "portfolio-1.md"
+    }
+  ],
+  "teaching": [
+    {
+      "title": "Physics 209",
+      "collection": "teaching",
+      "type": "Undergraduate course",
+      "permalink": "https://catalog.latech.edu/preview_course_nopop.php?catoid=8&coid=28122",
+      "venue": "Louisiana Tech University, Department of Physics",
+      "date": "2021-01-04",
+      "location": "Ruston, Lousiana, USA",
+      "body": "Duties at various times have included \ntaking full classes with student strength of 64. Study sessions on weekends and office hours. Conducting quiz, exam and daily assignments.",
+      "source_file": "209.md"
+    },
+    {
+      "title": "Applied Mathematics - Directed Reading Program Mentor",
+      "collection": "teaching",
+      "type": "Undergraduate course",
+      "permalink": "https://www.dam.brown.edu/drp/projects.html",
+      "venue": "Brown University, Division of Applied Mathematics",
+      "date": "2023-01-03",
+      "location": "Providence, Rhode Island, USA",
+      "body": "The Directed Reading Program provides undergraduates with the opportunity to work one-on-one with graduate students and post-docs in the Division of Applied Mathematics (APMA) on independent reading projects. It is a fantastic opportunity for motivating undergraduates to learn new mathematical \\& computational skills forge connections and explore higher-level mathematics outside of the undergraduate curriculum.",
+      "source_file": "DRP.md"
+    },
+    {
+      "title": "CS 5325 – Reinforcement Learning",
+      "collection": "teaching Fall 2025",
+      "type": "Graduate course",
+      "permalink": "https://mycatalog.txstate.edu/courses/cs/",
+      "venue": "Texas State University, Department of Computer Science",
+      "date": "2025-07-25",
+      "location": "Providence, Rhode Island, USA",
+      "body": "<span style=\"color:green;\"><em>Enter the world where intelligent agents learn to make choices:\nWelcome to the Matrix of Reinforcement Learning.\n</em></span>\nReinforcement Learning (RL) powers some of today’s most advanced AI systems, from game-playing agents like AlphaGo to conversational models like ChatGPT. This graduate-level course introduces the core principles of RL, where intelligent agents learn to make decisions by interacting with their environment to maximize long-term rewards. You’ll explore fundamental topics such as Markov Decision Processes, Q-Learning, and Policy Gradients, before advancing to Deep Reinforcement Learning and modern techniques like Proximal Policy Optimization (PPO), which is part of the same family of methods used to align AI models, such as ChatGPT, with human feedback. The course blends theoretical foundations with hands-on projects using Python, PyTorch, and OpenAI Gym.\n\n![image](/images/RL.png)\n\n[Download Syllabus](/files/CS_5325_syllabus.pdf)",
+      "source_file": "Fall_2025.md"
+    },
+    {
+      "title": "Teaching Assistant- Deep Learning for Scientists & Engineers",
+      "collection": "teaching",
+      "type": "NVIDIA Course",
+      "permalink": "https://www.nvidia.com/en-us/on-demand/deep-learning-for-science-and-engineering",
+      "venue": "NVIDIA and Brown University",
+      "date": "2023-01-04",
+      "location": "USA",
+      "body": "(Funded by NVIDIA, a unique course from basic deep learning techniques to recently published research papers) \nDuties: Testing various optimization algorithms for benchmark in optimization, Analyzing mathematical formulations and proofs, and Preparing course contents from research papers and textbooks.",
+      "source_file": "Nv.md"
+    },
+    {
+      "title": "CS 4379G - Data Science and Visualization with Python",
+      "collection": "teaching Spring 2026",
+      "type": "Upper Level Undergraduate Course",
+      "permalink": "https://mycatalog.txstate.edu/courses/cs/",
+      "venue": "Texas State University, Department of Computer Science",
+      "location": "San Marcos, Texas, USA",
+      "body": "<span style=\"color:green;\"><em>This course will teach you how to take messy real-world data, find the story, and build an interactive dashboard that convinces someone to act.\n</em></span>\n\n![image](/images/cs4379.png)",
+      "source_file": "Spring_2026.md"
+    },
+    {
+      "title": "TA- APMA 2070",
+      "collection": "teaching",
+      "type": "Graduate course",
+      "permalink": "https://sites.brown.edu/crunch-group/apma-2070-deep-learning-for-scientists-engineers/",
+      "venue": "Brown University, Division of Applied Mathematics",
+      "date": "2024-01-01",
+      "location": "Providence, Rhode Island, USA",
+      "body": "",
+      "source_file": "apma_24.md"
+    },
+    {
+      "title": "TA- APMA 2070",
+      "collection": "teaching",
+      "type": "Graduate course",
+      "permalink": "https://sites.brown.edu/crunch-group/apma-2070-deep-learning-for-scientists-engineers/",
+      "venue": "Brown University, Division of Applied Mathematics",
+      "date": "2025-01-01",
+      "location": "Providence, Rhode Island, USA",
+      "body": "",
+      "source_file": "apma_25.md"
+    },
+    {
+      "title": "Physics 2611/2621",
+      "collection": "teaching",
+      "type": "Undergraduate course",
+      "permalink": "https://catalog.latech.edu/preview_program.php?catoid=20&poid=7176",
+      "venue": "Louisiana Tech University, Department of Physics",
+      "date": "2016-01-09",
+      "location": "Ruston, Louisiana, USA",
+      "body": "Duties at various times have included office hours and leading weekly computer lab exercises. Also\ntaking full classes with student strength of 20. During stay home order , prepared video resources\nfor all the lab experiments to teach online for the students.",
+      "source_file": "ta_1.md"
+    }
+  ],
+  "talks": [
+    {
+      "title": "Enhancing Heat Sink Efficiency in MOSFETs using Physics Informed Neural Networks",
+      "collection": "talks",
+      "type": "Talk",
+      "permalink": "https://math.gmu.edu/~hantil/ECOM/2025/",
+      "venue": "East Coast Optimization Meeting (ECOM), 2025, George Mason University Arlington, Virginia (USA)",
+      "date": "2025-04-17",
+      "location": "Arlington, VA, USA",
+      "body": "",
+      "source_file": "talk-1.md",
+      "display_date": "Apr. 17–18, 2025"
+    },
+    {
+      "title": "Neural Network Method for Solving Parabolic Two-Step Microscale Heat, Conduction in Double-Layer Thin Films Exposed to Ultrashort-Pulsed Lasers",
+      "collection": "talks",
+      "type": "Talk",
+      "venue": "Computational Mathematics and Machine Learning Workshop, Lorentz Centre: Netherlands",
+      "date": "2021-11-01",
+      "location": "Zoom",
+      "body": "",
+      "source_file": "talk-2.md"
+    },
+    {
+      "title": "Neural Network Method for Solving Parabolic Two-Step Microscale Heat, Conduction in Double-Layer Thin Films Exposed to Ultrashort-Pulsed Lasers",
+      "collection": "talks",
+      "type": "Talk",
+      "venue": "Machine Learning + X, Crunch Seminar, Brown University",
+      "date": "2021-07-23",
+      "location": "Providence, RI, USA",
+      "body": "",
+      "source_file": "talk-3.md"
+    },
+    {
+      "title": "Learning bias corrections for climate models using deep neural operators",
+      "collection": "talks",
+      "type": "Talk",
+      "venue": "Applied mathematics symposium: artificial intelligence meets fluid",
+      "date": "2023-07-07",
+      "location": "Zoom, IIT Guwahati, IIT Hyderabad and VIT, India",
+      "body": "",
+      "source_file": "talk_4.md"
+    },
+    {
+      "title": "Learning bias corrections for climate models using deep neural operators",
+      "collection": "talks",
+      "type": "Talk",
+      "venue": "AAAI 2023 Spring Symposium Series",
+      "date": "2023-03-27",
+      "location": "San Francisco, California",
+      "body": "",
+      "source_file": "talk_5.md",
+      "display_date": "Mar. 27–29, 2023"
+    },
+    {
+      "title": "Combining Differentiable PDE Solvers and Graph Neural Networks for Fluid Flow Prediction (paper review)",
+      "collection": "talks",
+      "type": "Talk",
+      "venue": "Machine Learning + X, Crunch Seminar, Brown University",
+      "date": "2022-04-22",
+      "location": "Providence, RI, USA",
+      "body": "",
+      "source_file": "talk_6.md"
+    },
+    {
+      "title": "Applications on Riemann Integration and Metric Space ",
+      "collection": "talks",
+      "type": "Talk",
+      "venue": "Applications on Riemann Integration and Metric Space (WARIMS-2021), department of basic sciences, school of technology, Assam Don Bosco University",
+      "date": "2021-12-23",
+      "location": "Zoom, Assam Don Bosco University, India",
+      "body": "",
+      "source_file": "talk_7.md"
+    },
+    {
+      "date": "2026-05-19",
+      "venue": "HydroML 2026",
+      "title": "PIER (Physics-Informed, Energy-efficient, Risk-aware Routing)",
+      "location": "",
+      "source_file": "cv-2026-05-19.md"
+    },
+    {
+      "date": "2026-03-10",
+      "venue": "Oden Institute Seminar, University of Texas at Austin",
+      "title": "PIER: Toward Practical, Risk-Aware Voyage Planning",
+      "location": "Austin, Texas",
+      "source_file": "cv-2026-03-10.md"
+    },
+    {
+      "date": "2025-10-10",
+      "venue": "Rice AI Seminar Series, Rice University",
+      "title": "Mathematically Diverse Multiscale Neural Operators: From Bias Correction to Inverse Forcings",
+      "location": "Houston, Texas",
+      "source_file": "cv-2025-10-10.md"
+    },
+    {
+      "date": "2025-09-25",
+      "venue": "Scientific Machine Learning for Differential Equations, Oden Institute",
+      "title": "Enhancing Heat Sink Efficiency in MOSFETs using Physics-Informed Neural Networks (poster)",
+      "location": "Austin, Texas",
+      "source_file": "cv-2025-09-25.md",
+      "display_date": "Sept. 25–26, 2025"
+    },
+    {
+      "date": "2021-11-28",
+      "venue": "Louisiana Tech University",
+      "title": "Science Seminar",
+      "location": "Ruston, Louisiana",
+      "source_file": "cv-2021-11-28.md"
+    },
+    {
+      "date": "2026-03-12",
+      "venue": "Global Innovation Rodeo at Texas House, SXSW 2026",
+      "title": "Innovation presentation",
+      "location": "",
+      "source_file": "cv-2026-03-12.md"
+    }
+  ],
+  "cv_updated": "2026-10-10"
+}
